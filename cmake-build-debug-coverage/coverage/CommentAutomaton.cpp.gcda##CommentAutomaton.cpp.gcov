@@ -1,0 +1,163 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/CommentAutomaton.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/CommentAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/CommentAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#include "CommentAutomaton.h"
+        -:    6:
+function _ZN16CommentAutomaton2S0ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 134 returned 100% blocks executed 100%
+      134:    7:void CommentAutomaton::S0(const std::string &input) {
+        -:    8:
+      134:    9:    if(input[index] == '#'){
+      134:    9-block  0
+call    0 returned 134
+branch  1 taken 2 (fallthrough)
+branch  2 taken 132
+        2:   10:        inputRead++;
+        2:   11:        index++;
+        2:   12:        S1(input);
+        2:   12-block  0
+call    0 returned 2
+        -:   13:    }
+        -:   14:    else {
+      132:   15:        Serr();
+      132:   15-block  0
+call    0 returned 132
+        -:   16:    }
+      134:   17:}
+        -:   18:
+function _ZN16CommentAutomaton2S1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 90 returned 100% blocks executed 86%
+       90:   19:void CommentAutomaton::S1(const std::string &input) {
+        -:   20:
+       90:   21:    if(input[1] == '|'){    // #| 인 경우
+       90:   21-block  0
+call    0 returned 90
+branch  1 taken 0 (fallthrough)
+branch  2 taken 90
+    #####:   22:        inputRead++;
+    #####:   23:        index++;  // |가 바로 왔ㅇ
+    #####:   24:        S2(input);
+    %%%%%:   24-block  0
+call    0 never executed
+        -:   25:    }
+       90:   26:    else if(input[index] != '\n'){
+       90:   26-block  0
+call    0 returned 90
+branch  1 taken 88 (fallthrough)
+branch  2 taken 2
+       88:   27:        inputRead++;
+       88:   28:        index++;
+       88:   29:        S1(input);
+       88:   29-block  0
+call    0 returned 88
+        -:   30:    }
+       90:   31:}
+        -:   32:
+function _ZN16CommentAutomaton2S2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   33:void CommentAutomaton::S2(const std::string &input) {
+    #####:   34:    if((unsigned) index >= input.size()){
+    %%%%%:   34-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   35:        Serr();
+    %%%%%:   35-block  0
+call    0 never executed
+        -:   36:    }
+    #####:   37:    else if(input[index] != '|') {
+    %%%%%:   37-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   38:        if(input[index] == '\n') {
+    %%%%%:   38-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   39:            newLines++;
+    %%%%%:   39-block  0
+        -:   40:        }
+    #####:   41:        inputRead++;
+    #####:   42:        index++;
+    #####:   43:        S2(input);
+    %%%%%:   43-block  0
+call    0 never executed
+        -:   44:    }
+        -:   45:    else {
+    #####:   46:        inputRead++;
+    #####:   47:        index++;
+    #####:   48:        S3(input);
+    %%%%%:   48-block  0
+call    0 never executed
+        -:   49:    }
+    #####:   50:}
+        -:   51:
+function _ZN16CommentAutomaton2S3ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   52:void CommentAutomaton::S3(const std::string &input) {
+    #####:   53:    if((unsigned) index >= input.size()){
+    %%%%%:   53-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   54:        Serr();
+    %%%%%:   54-block  0
+call    0 never executed
+        -:   55:    }
+    #####:   56:    else if(input[index] == '\n'){
+    %%%%%:   56-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   57:        newLines++;
+    #####:   58:        inputRead++;
+    #####:   59:        index++;
+    #####:   60:        S2(input);
+    %%%%%:   60-block  0
+call    0 never executed
+        -:   61:    }
+    #####:   62:    else if((input[index] != '#') && (input[index] != '|')) {
+    %%%%%:   62-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   62-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   62-block  2
+    %%%%%:   62-block  3
+    %%%%%:   62-block  4
+branch  6 never executed
+branch  7 never executed
+        -:   63:
+    #####:   64:        inputRead++;
+    #####:   65:        index++;
+    #####:   66:        S2(input);
+    %%%%%:   66-block  0
+call    0 never executed
+        -:   67:    }
+    #####:   68:    else if(input[index] == '|') {
+    %%%%%:   68-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   69:        inputRead++;
+    #####:   70:        index++;
+    #####:   71:        S3(input);
+    %%%%%:   71-block  0
+call    0 never executed
+        -:   72:    }
+    #####:   73:    else if(input[index] == '#'){
+    %%%%%:   73-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   74:        inputRead++;
+    %%%%%:   74-block  0
+        -:   75:    }
+    #####:   76:}
+        -:   77:
+        -:   78:

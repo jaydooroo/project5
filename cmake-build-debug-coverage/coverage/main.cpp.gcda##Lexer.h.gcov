@@ -1,0 +1,45 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Lexer.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#ifndef LEXER_H
+        -:    2:#define LEXER_H
+        -:    3:#include <vector>
+        -:    4:#include "Automaton.h"
+        -:    5:#include "Token.h"
+        -:    6:#include <sstream>
+        -:    7:
+        -:    8:class Lexer
+        -:    9:{
+        -:   10:private:
+        -:   11:    std::vector<Automaton*> automata;
+        -:   12:    std::vector<Token*> tokens;
+        -:   13:
+        -:   14:    void CreateAutomata();
+        -:   15:
+        -:   16:    // TODO: add any other private methods here (if needed)
+        -:   17:
+        -:   18:public:
+        -:   19:    Lexer();
+        -:   20:    ~Lexer();
+        -:   21:
+        -:   22:    void Run(std::string& input);
+        -:   23:    int totalToken();
+        -:   24:
+function _ZN5Lexer12returnTokensEv called 1 returned 100% blocks executed 100%
+        1:   25:    std:: vector <Token*> returnTokens() {
+        1:   26:        return tokens;
+        1:   26-block  0
+call    0 returned 1
+        -:   27:    }
+        -:   28:
+        -:   29:
+        -:   30:
+        -:   31:    std::string toString();
+        -:   32:
+        -:   33:    // TODO: add other public methods here
+        -:   34:
+        -:   35:};
+        -:   36:
+        -:   37:#endif // LEXER_H
+        -:   38:

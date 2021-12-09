@@ -1,0 +1,46 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/SchemesAutomaton.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/SchemesAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/SchemesAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_SCHEMESAUTOMATON_H
+        -:    6:#define PROJECT1_STARTER_CODE_SCHEMESAUTOMATON_H
+        -:    7:
+        -:    8:#include "Automaton.h"
+        -:    9:
+        -:   10:class SchemesAutomaton : public Automaton {
+        -:   11:
+        -:   12:private:
+        -:   13:    void S1(const std::string& input);
+        -:   14:    void S2(const std::string& input);
+        -:   15:    void S3(const std::string& input);
+        -:   16:    void S4(const std::string& input);
+        -:   17:    void S5(const std::string& input);
+        -:   18:    void S6(const std::string& input);
+        -:   19:
+        -:   20:public:
+        -:   21:    SchemesAutomaton() : Automaton(TokenType::SCHEMES){}
+        2:   22:   ~ SchemesAutomaton() {}
+------------------
+_ZN16SchemesAutomatonD0Ev:
+function _ZN16SchemesAutomatonD0Ev called 1 returned 100% blocks executed 100%
+        1:   22:   ~ SchemesAutomaton() {}
+        1:   22-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN16SchemesAutomatonD2Ev:
+function _ZN16SchemesAutomatonD2Ev called 1 returned 100% blocks executed 100%
+        1:   22:   ~ SchemesAutomaton() {}
+        1:   22-block  0
+call    0 returned 1
+------------------
+        -:   23:    void S0(const std::string& input);
+        -:   24:
+        -:   25:};
+        -:   26:
+        -:   27:
+        -:   28:#endif //PROJECT1_STARTER_CODE_SCHEMESAUTOMATON_H

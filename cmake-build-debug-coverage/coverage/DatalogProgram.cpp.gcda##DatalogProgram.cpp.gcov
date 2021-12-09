@@ -1,0 +1,330 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/DatalogProgram.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/DatalogProgram.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/DatalogProgram.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-25.
+        -:    3://
+        -:    4:
+        -:    5:#include "DatalogProgram.h"
+        -:    6:
+function _ZN14DatalogProgram7setFactE9Predicate called 0 returned 0% blocks executed 0%
+    #####:    7:void DatalogProgram::setFact (Predicate tempFact) {
+    #####:    8:    fact.push_back(tempFact);
+    %%%%%:    8-block  0
+call    0 never executed
+        -:    9:
+    #####:   10:    for (unsigned int i = 0; i < tempFact.returnParameter().size(); i++) {
+    %%%%%:   10-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:   11:
+    #####:   12:        domain.insert(tempFact.returnParameter().at(i).toString());
+    %%%%%:   12-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   12-block  1
+call    6 never executed
+    $$$$$:   12-block  2
+call    7 never executed
+        -:   13:    }
+    #####:   14:}
+    %%%%%:   14-block  0
+        -:   15:
+function _ZN14DatalogProgram8toStringB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   16:std::string DatalogProgram::toString () {
+    #####:   17:    std::ostringstream oss;
+    %%%%%:   17-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   17-block  1
+call    3 never executed
+    $$$$$:   17-block  2
+call    4 never executed
+        -:   18:
+    #####:   19:    oss << "Schemes(" << scheme.size() << "):" << std::endl;
+    %%%%%:   19-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   19-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   19-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   19-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+        -:   20:
+    #####:   21:    for (unsigned int i = 0; i < scheme.size(); i++) {
+    %%%%%:   21-block  0
+    %%%%%:   21-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   22:        oss << "  " << scheme.at(i).toString() << std::endl;
+    %%%%%:   22-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   22-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   22-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   22-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   22-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   22-block  5
+call   15 never executed
+    $$$$$:   22-block  6
+call   16 never executed
+    $$$$$:   22-block  7
+        -:   23:    }
+        -:   24:
+    #####:   25:    oss << "Facts(" << fact.size() << "):" << std::endl;
+    %%%%%:   25-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   25-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   25-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   25-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+        -:   26:
+    #####:   27:    for (unsigned int i = 0; i < fact.size(); i++) {
+    %%%%%:   27-block  0
+    %%%%%:   27-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   28:        oss << "  " << fact.at(i).toString() << "." << std::endl;
+    %%%%%:   28-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   28-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   28-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   28-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   28-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   28-block  5
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   28-block  6
+call   18 never executed
+    $$$$$:   28-block  7
+call   19 never executed
+    $$$$$:   28-block  8
+        -:   29:    }
+        -:   30:
+    #####:   31:    oss << "Rules(" << rule.size() << "):" << std::endl;
+    %%%%%:   31-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   31-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   31-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   31-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+        -:   32:
+    #####:   33:    for (unsigned int i = 0; i < rule.size(); i++) {
+    %%%%%:   33-block  0
+    %%%%%:   33-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   34:        oss <<"  " << rule.at(i).toString() << std::endl;
+    %%%%%:   34-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   34-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   34-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   34-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   34-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   34-block  5
+call   15 never executed
+    $$$$$:   34-block  6
+call   16 never executed
+    $$$$$:   34-block  7
+        -:   35:    }
+        -:   36:
+    #####:   37:    oss <<"Queries(" << query.size() << "):" << std::endl;
+    %%%%%:   37-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   37-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   37-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   37-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+        -:   38:
+    #####:   39:    for (unsigned int i = 0; i < query.size(); i++) {
+    %%%%%:   39-block  0
+    %%%%%:   39-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   40:
+    #####:   41:        oss << "  " << query.at(i).toString() << "?" <<std::endl;
+    %%%%%:   41-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   41-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   41-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   41-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   41-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   41-block  5
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   41-block  6
+call   18 never executed
+    $$$$$:   41-block  7
+call   19 never executed
+    $$$$$:   41-block  8
+        -:   42:    }
+        -:   43:
+    #####:   44:    oss << "Domain(" << domain.size() << "):" << std::endl;
+    %%%%%:   44-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   44-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   44-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   44-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+        -:   45:
+    #####:   46:    std::set<std::string>::iterator iter;
+    %%%%%:   46-block  0
+call    0 never executed
+        -:   47:
+    #####:   48:    for (iter = domain.begin(); iter != domain.end(); iter++) {
+call    0 never executed
+    %%%%%:   48-block  0
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   48-block  1
+call    5 never executed
+    #####:   49:        oss << "  " << *iter << std::endl;
+    %%%%%:   49-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   49-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   49-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+        -:   50:    }
+        -:   51:
+    #####:   52:    return oss.str();
+    %%%%%:   52-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   52-block  1
+        -:   53:
+        -:   54:}
+        -:   55:
+        -:   56:

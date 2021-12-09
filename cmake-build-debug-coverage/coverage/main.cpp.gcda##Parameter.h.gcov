@@ -1,0 +1,40 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Parameter.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-25.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_PARAMETER_H
+        -:    6:#define PROJECT1_STARTER_CODE_PARAMETER_H
+        -:    7:#include <string>
+        -:    8:#include <sstream>
+        -:    9:
+        -:   10:class Parameter {
+        -:   11:private:
+        -:   12:    std::string ID;
+        -:   13:    std::string STRING;
+        -:   14:
+        -:   15:    std::string choice;
+        -:   16:public:
+        -:   17:
+        -:   18:    Parameter(std::string tempChoice, std::string tempString);
+function _ZN9ParameterD2Ev called 0 returned 0% blocks executed 0%
+    #####:   19:    ~Parameter() {}
+    %%%%%:   19-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:   20:
+        -:   21:    std::string getChoice () {
+        -:   22:        return choice;
+        -:   23:    }
+        -:   24:
+        -:   25:    std::string toString();
+        -:   26:
+        -:   27:
+        -:   28:};
+        -:   29:
+        -:   30:
+        -:   31:#endif //PROJECT1_STARTER_CODE_PARAMETER_H

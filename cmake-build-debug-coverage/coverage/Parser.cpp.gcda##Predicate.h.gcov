@@ -1,0 +1,120 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Predicate.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Parser.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Parser.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-25.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_PREDICATE_H
+        -:    6:#define PROJECT1_STARTER_CODE_PREDICATE_H
+        -:    7:#include <vector>
+        -:    8:#include <string>
+        -:    9:#include <sstream>
+        -:   10:#include "Parameter.h"
+        -:   11:
+        -:   12:class Predicate {
+        -:   13:private:
+        -:   14:    std::string ID;
+        -:   15:    std::vector <Parameter> insideString;
+        -:   16:
+        -:   17:public:
+function _ZN9PredicateC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   18:Predicate (std::string tempID): ID(tempID) {}
+    %%%%%:   18-block  0
+call    0 never executed
+call    1 never executed
+function _ZN9PredicateC2Ev called 0 returned 0% blocks executed 0%
+    #####:   19:Predicate() {}
+    %%%%%:   19-block  0
+call    0 never executed
+call    1 never executed
+        -:   20:
+function _ZN9PredicateD2Ev called 0 returned 0% blocks executed 0%
+    #####:   21:~Predicate() {}
+    %%%%%:   21-block  0
+call    0 never executed
+call    1 never executed
+        -:   22:
+function _ZN9Predicate9setMainIDENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   23:void setMainID (std::string tempID) {
+    #####:   24:    ID = tempID;
+    %%%%%:   24-block  0
+call    0 never executed
+    #####:   25:}
+        -:   26:
+function _ZN9Predicate5setIDENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   27:void setID (std::string tempID) {
+    #####:   28:    Parameter tempSet("ID",tempID);
+    %%%%%:   28-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   28-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   28-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+call   11 never executed
+    %%%%%:   28-block  3
+call   12 never executed
+    $$$$$:   28-block  4
+    $$$$$:   28-block  5
+    $$$$$:   28-block  6
+    $$$$$:   28-block  7
+call   13 never executed
+    #####:   29:    insideString.push_back(tempSet);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   30:}
+        -:   31:
+function _ZN9Predicate9setStringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   32:void setString (std::string tempString) {
+    #####:   33:    Parameter tempSet("STRING", tempString);
+    %%%%%:   33-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   33-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   33-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+call   11 never executed
+    %%%%%:   33-block  3
+call   12 never executed
+    $$$$$:   33-block  4
+    $$$$$:   33-block  5
+    $$$$$:   33-block  6
+    $$$$$:   33-block  7
+call   13 never executed
+    #####:   34:    insideString.push_back(tempSet);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   35:}
+        -:   36:
+        -:   37:std::vector<Parameter> &returnParameter () {
+        -:   38:    return insideString;
+        -:   39:}
+        -:   40:
+        -:   41:std::string returnID() {
+        -:   42:    return ID;
+        -:   43:}
+        -:   44:
+        -:   45:std::string toString ();
+        -:   46:};
+        -:   47:
+        -:   48:
+        -:   49:#endif //PROJECT1_STARTER_CODE_PREDICATE_H

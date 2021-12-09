@@ -1,0 +1,26 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/LeftParenAutomaton.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/LeftParenAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/LeftParenAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#include "LeftParenAutomaton.h"
+        -:    6:
+function _ZN18LeftParenAutomaton2S0ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 134 returned 100% blocks executed 100%
+      134:    7:void LeftParenAutomaton::S0(const std::string& input) {
+      134:    8:    if (input[index] == '(') {
+      134:    8-block  0
+call    0 returned 134
+branch  1 taken 12 (fallthrough)
+branch  2 taken 122
+       12:    9:        inputRead = 1;
+       12:    9-block  0
+        -:   10:    }
+        -:   11:    else {
+      122:   12:        Serr();
+      122:   12-block  0
+call    0 returned 122
+        -:   13:    }
+      134:   14:}

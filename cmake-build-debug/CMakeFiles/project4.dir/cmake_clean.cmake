@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/project4.dir/AddAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/ColonAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/ColonDashAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/CommaAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/CommentAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/Database.cpp.obj"
+  "CMakeFiles/project4.dir/DatalogProgram.cpp.obj"
+  "CMakeFiles/project4.dir/EOFAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/FactsAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/Graph.cpp.obj"
+  "CMakeFiles/project4.dir/Header.cpp.obj"
+  "CMakeFiles/project4.dir/IDAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/Interpreter.cpp.obj"
+  "CMakeFiles/project4.dir/LeftParenAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/Lexer.cpp.obj"
+  "CMakeFiles/project4.dir/MultiplyAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/Parameter.cpp.obj"
+  "CMakeFiles/project4.dir/Parser.cpp.obj"
+  "CMakeFiles/project4.dir/PeriodAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/Predicate.cpp.obj"
+  "CMakeFiles/project4.dir/Q_MarkAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/QueriesAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/Relation.cpp.obj"
+  "CMakeFiles/project4.dir/RightParenAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/Rule.cpp.obj"
+  "CMakeFiles/project4.dir/RulesAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/SchemesAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/StringAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/Token.cpp.obj"
+  "CMakeFiles/project4.dir/Tuple.cpp.obj"
+  "CMakeFiles/project4.dir/UndefinedAutomaton.cpp.obj"
+  "CMakeFiles/project4.dir/main.cpp.obj"
+  "project4.exe"
+  "project4.exe.manifest"
+  "project4.lib"
+  "project4.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/project4.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

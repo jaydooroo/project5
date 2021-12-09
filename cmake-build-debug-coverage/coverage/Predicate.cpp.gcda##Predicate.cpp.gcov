@@ -1,0 +1,92 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Predicate.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Predicate.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Predicate.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-25.
+        -:    3://
+        -:    4:
+        -:    5:#include "Predicate.h"
+        -:    6:
+function _ZN9Predicate8toStringB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:    7:std::string Predicate::toString () {
+        -:    8:
+    #####:    9:    std::ostringstream oss;
+    %%%%%:    9-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:    9-block  1
+call    3 never executed
+    $$$$$:    9-block  2
+call    4 never executed
+    #####:   10:    oss << ID << "(" ;
+    %%%%%:   10-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   10-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   11:    for (unsigned int i = 0; i < insideString.size() - 1; i++) {
+    %%%%%:   11-block  0
+    %%%%%:   11-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   12:        oss << insideString.at(i).toString() << ",";
+    %%%%%:   12-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   12-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   12-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   12-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   12-block  4
+call   12 never executed
+    $$$$$:   12-block  5
+call   13 never executed
+    $$$$$:   12-block  6
+        -:   13:    }
+    #####:   14:    oss << insideString.at(insideString.size() - 1).toString() ;
+    %%%%%:   14-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   14-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   14-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   14-block  3
+call   10 never executed
+    $$$$$:   14-block  4
+call   11 never executed
+    $$$$$:   14-block  5
+        -:   15:
+    #####:   16:    oss << ")";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   17:
+    #####:   18:    return oss.str();
+    %%%%%:   18-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   18-block  1
+        -:   19:}

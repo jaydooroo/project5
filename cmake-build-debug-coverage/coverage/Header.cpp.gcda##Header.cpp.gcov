@@ -1,0 +1,82 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Header.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Header.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Header.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-10-26.
+        -:    3://
+        -:    4:
+        -:    5:#include "Header.h"
+        -:    6:
+function _ZN6Header9SetHeaderENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:    7:void Header::SetHeader (std::string attribute) {
+    #####:    8:    attributes.push_back(attribute);
+    %%%%%:    8-block  0
+call    0 never executed
+    #####:    9:}
+        -:   10:
+function _ZN6Header9GetHeaderB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   11:std::vector<std::string> &Header::GetHeader () {
+    #####:   12:    return attributes;
+    %%%%%:   12-block  0
+        -:   13:}
+        -:   14:
+function _ZN6Header8toStringB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   15:std::string Header::toString() {
+        -:   16:
+    #####:   17:    std::ostringstream oss;
+    %%%%%:   17-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   17-block  1
+call    3 never executed
+    $$$$$:   17-block  2
+call    4 never executed
+        -:   18:
+    #####:   19:    for (unsigned int i = 0; i < attributes.size(); i++) {
+    %%%%%:   19-block  0
+    %%%%%:   19-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   19-block  2
+    #####:   20:        if ( i < attributes.size() - 1) {
+    %%%%%:   20-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   21:            oss << attributes.at(i) << ",";
+    %%%%%:   21-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   21-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   21-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        -:   22:        }
+        -:   23:        else {
+    #####:   24:            oss << attributes.at(i);
+    %%%%%:   24-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   24-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        -:   25:        }
+        -:   26:    }
+        -:   27:
+    #####:   28:    return oss.str();
+    %%%%%:   28-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   28-block  1
+        -:   29:}

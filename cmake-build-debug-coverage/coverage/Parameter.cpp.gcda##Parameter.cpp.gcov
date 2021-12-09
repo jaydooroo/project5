@@ -1,0 +1,82 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Parameter.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Parameter.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Parameter.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-25.
+        -:    3://
+        -:    4:
+        -:    5:#include "Parameter.h"
+        -:    6:
+        -:    7:
+function _ZN9ParameterC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_ called 0 returned 0% blocks executed 0%
+    #####:    8:Parameter:: Parameter(std::string tempChoice, std::string tempString): choice(tempChoice) {
+    %%%%%:    8-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    $$$$$:    8-block  1
+call    5 never executed
+    $$$$$:    8-block  2
+call    6 never executed
+    $$$$$:    8-block  3
+call    7 never executed
+    #####:    9:    if (choice == "STRING") {
+    %%%%%:    9-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   10:        STRING = tempString;
+    %%%%%:   10-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   11:    } else {
+    #####:   12:        ID = tempString;
+    %%%%%:   12-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   13:    }
+    #####:   14:}
+    %%%%%:   14-block  0
+        -:   15:
+function _ZN9Parameter8toStringB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   16:std::string Parameter::toString() {
+    #####:   17:    std::ostringstream oss;
+    %%%%%:   17-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   17-block  1
+call    3 never executed
+    $$$$$:   17-block  2
+call    4 never executed
+    #####:   18:    if (choice == "STRING") {
+    %%%%%:   18-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   19:        oss << STRING;
+    %%%%%:   19-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   20:    }
+        -:   21:    else {
+    #####:   22:        oss << ID;
+    %%%%%:   22-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   23:    }
+        -:   24:
+    #####:   25:    return oss.str();
+    %%%%%:   25-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   25-block  1
+        -:   26:}

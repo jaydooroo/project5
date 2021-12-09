@@ -1,0 +1,25 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/MultiplyAutomaton.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_MULTIPLYAUTOMATON_H
+        -:    6:#define PROJECT1_STARTER_CODE_MULTIPLYAUTOMATON_H
+        -:    7:#include "Automaton.h"
+        -:    8:
+        -:    9:class MultiplyAutomaton : public Automaton{
+        -:   10:
+        -:   11:public:
+function _ZN17MultiplyAutomatonC2Ev called 1 returned 100% blocks executed 100%
+        1:   12:    MultiplyAutomaton() : Automaton(TokenType::MULTIPLY) {}
+        1:   12-block  0
+call    0 returned 1
+        -:   13:   ~MultiplyAutomaton() {}
+        -:   14:    void S0(const std::string& input);
+        -:   15:};
+        -:   16:
+        -:   17:
+        -:   18:#endif //PROJECT1_STARTER_CODE_MULTIPLYAUTOMATON_H

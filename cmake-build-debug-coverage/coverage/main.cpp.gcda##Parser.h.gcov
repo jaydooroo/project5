@@ -1,0 +1,86 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Parser.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-23.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_PARSER_H
+        -:    6:#define PROJECT1_STARTER_CODE_PARSER_H
+        -:    7:#include "Token.h"
+        -:    8:#include <vector>
+        -:    9:#include <sstream>
+        -:   10:#include "DatalogProgram.h"
+        -:   11:
+        -:   12:class Parser {
+        -:   13:
+        -:   14:private:
+        -:   15:    std::vector<Token *> tokens;
+        -:   16:    DatalogProgram datalog;
+        -:   17:
+        -:   18:
+        -:   19:
+        -:   20:public:
+function _ZN6ParserC2ESt6vectorIP5TokenSaIS2_EE called 1 returned 100% blocks executed 62%
+        1:   21:    Parser(std::vector<Token *> tempToken) {
+        1:   21-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   21-block  1
+call    2 never executed
+    $$$$$:   21-block  2
+call    3 never executed
+        1:   22:        tokens = tempToken;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   23:    }
+        1:   23-block  0
+        -:   24:
+function _ZN6ParserD2Ev called 1 returned 100% blocks executed 100%
+        1:   25:    ~ Parser() {}
+        1:   25-block  0
+call    0 returned 1
+call    1 returned 1
+        -:   26:
+function _ZN6Parser10getDatalogEv called 1 returned 100% blocks executed 100%
+        1:   27:    DatalogProgram &getDatalog () {
+        1:   28:        return datalog;
+        1:   28-block  0
+        -:   29:    }
+        -:   30:
+        -:   31:    std::string datalogParse();
+        -:   32:
+        -:   33:    std::string toString();
+        -:   34:
+        -:   35:    void printDatalog ();
+        -:   36:
+        -:   37:    void schemeParse (int &index);
+        -:   38:    void schemeListParse(int &index);
+        -:   39:    void factListParse (int &index);
+        -:   40:    void factParse (int &index);
+        -:   41:    void idListParse (int &index);
+        -:   42:    void stringListParse (int &index);
+        -:   43:    void ruleListParse (int &index);
+        -:   44:    void ruleParse (int &index);
+        -:   45:    void headPredicateParse (int &index);
+        -:   46:    void predicateParse (int &index);
+        -:   47:    void predicateListParse (int &index);
+        -:   48:    void parameterParse (int &index);
+        -:   49:    void parameterListParse (int &index);
+        -:   50:    void queryParse (int &index);
+        -:   51:    void queryListParse (int &index);
+        -:   52:
+        -:   53:    void idListParse (int &index, Predicate &tempPredicate);
+        -:   54:    void stringListParse (int &index, Predicate &tempFact);
+        -:   55:    void headPredicateParse (int &index, Predicate &tempRule);
+        -:   56:    void predicateParse (int &index, Rule &tempRule);
+        -:   57:    void parameterParse (int &index, Predicate &tempPredicate);
+        -:   58:    void parameterListParse (int &index, Predicate &tempPredicate);
+        -:   59:    void predicateListParse (int &index, Rule &tempRule);
+        -:   60:    void predicateParse (int &index, Predicate &tempPredicate);
+        -:   61:    bool match(int &index, TokenType tempToken);
+        -:   62:};
+        -:   63:
+        -:   64:#endif //PROJECT1_STARTER_CODE_PARSER_H

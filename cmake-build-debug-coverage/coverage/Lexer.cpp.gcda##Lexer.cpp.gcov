@@ -1,0 +1,518 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Lexer.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Lexer.h"
+        -:    2:#include "ColonAutomaton.h"
+        -:    3:#include "ColonDashAutomaton.h"
+        -:    4:#include "StringAutomaton.h"
+        -:    5:#include "PeriodAutomaton.h"
+        -:    6:#include "Q_MarkAutomaton.h"
+        -:    7:#include "LeftParenAutomaton.h"
+        -:    8:#include "RightParenAutomaton.h"
+        -:    9:#include "MultiplyAutomaton.h"
+        -:   10:#include "AddAutomaton.h"
+        -:   11:#include "SchemesAutomaton.h"
+        -:   12:#include "FactsAutomaton.h"
+        -:   13:#include "RulesAutomaton.h"
+        -:   14:#include "QueriesAutomaton.h"
+        -:   15:#include "CommaAutomaton.h"
+        -:   16:#include "IDAutomaton.h"
+        -:   17:#include "CommentAutomaton.h"
+        -:   18:#include "UndefinedAutomaton.h"
+        -:   19:#include "EOFAutomaton.h"
+function _ZN5LexerC2Ev called 1 returned 100% blocks executed 62%
+        1:   20:Lexer::Lexer() {
+        1:   20-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   20-block  1
+call    2 never executed
+    $$$$$:   20-block  2
+call    3 never executed
+        1:   21:    CreateAutomata();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22:}
+        1:   22-block  0
+        -:   23:
+function _ZN5LexerD2Ev called 1 returned 100% blocks executed 100%
+        1:   24:Lexer::~Lexer() {
+        1:   24-block  0
+call    0 returned 1
+call    1 returned 1
+        -:   25:    // TODO: need to clean up the memory in `automata` and `tokens`
+        -:   26:
+       19:   27:    for(unsigned int i = 0; i < automata.size(); i++) {
+        1:   27-block  0
+       19:   27-block  1
+call    0 returned 19
+branch  1 taken 18 (fallthrough)
+branch  2 taken 1
+       18:   27-block  2
+       18:   28:        delete automata.at(i);
+       18:   28-block  0
+call    0 returned 18
+branch  1 taken 18 (fallthrough)
+branch  2 taken 0
+       18:   28-block  1
+call    3 returned 18
+        -:   29:    }
+        -:   30:
+      136:   31:    for(unsigned int i = 0; i < tokens.size(); i++) {
+        1:   31-block  0
+      136:   31-block  1
+call    0 returned 136
+branch  1 taken 135 (fallthrough)
+branch  2 taken 1
+      135:   31-block  2
+      135:   32:        delete tokens.at(i);
+      135:   32-block  0
+call    0 returned 135
+branch  1 taken 135 (fallthrough)
+branch  2 taken 0
+      135:   32-block  1
+call    3 returned 135
+call    4 returned 135
+        -:   33:    }
+        -:   34:
+        1:   35:}
+        -:   36:
+function _ZN5Lexer14CreateAutomataEv called 1 returned 100% blocks executed 77%
+        1:   37:void Lexer::CreateAutomata() {
+        1:   38:    automata.push_back(new ColonAutomaton());
+        1:   38-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   38-block  1
+call    5 never executed
+        1:   39:    automata.push_back(new ColonDashAutomaton());
+        1:   39-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   39-block  1
+call    5 never executed
+        1:   40:    automata.push_back(new StringAutomaton());
+        1:   40-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   40-block  1
+call    5 never executed
+        1:   41:    automata.push_back(new PeriodAutomaton());
+        1:   41-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   41-block  1
+call    5 never executed
+        1:   42:    automata.push_back(new Q_MarkAutomaton());
+        1:   42-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   42-block  1
+call    5 never executed
+        1:   43:    automata.push_back(new LeftParenAutomaton());
+        1:   43-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   43-block  1
+call    5 never executed
+        1:   44:    automata.push_back(new RightParenAutomaton());
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   44-block  1
+call    5 never executed
+        1:   45:    automata.push_back(new MultiplyAutomaton());
+        1:   45-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   45-block  1
+call    5 never executed
+        1:   46:    automata.push_back(new AddAutomaton());
+        1:   46-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   46-block  1
+call    5 never executed
+        1:   47:    automata.push_back(new SchemesAutomaton());
+        1:   47-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   47-block  1
+call    5 never executed
+        1:   48:    automata.push_back(new FactsAutomaton());
+        1:   48-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   48-block  1
+call    5 never executed
+        1:   49:    automata.push_back(new RulesAutomaton());
+        1:   49-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   49-block  1
+call    5 never executed
+        1:   50:    automata.push_back(new QueriesAutomaton());
+        1:   50-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   50-block  1
+call    5 never executed
+        1:   51:    automata.push_back(new IDAutomaton());
+        1:   51-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   51-block  1
+call    5 never executed
+        1:   52:    automata.push_back(new CommentAutomaton);
+        1:   52-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   52-block  1
+call    5 never executed
+        1:   53:    automata.push_back(new CommaAutomaton());
+        1:   53-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   53-block  1
+call    5 never executed
+        -:   54:
+        1:   55:    automata.push_back(new UndefinedAutomaton());
+        1:   55-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   55-block  1
+call    5 never executed
+        -:   56:
+        1:   57:    automata.push_back(new EOFAutomaton());
+        1:   57-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        -:   58:    // TODO: Add the other needed automata here
+        1:   59:}
+        1:   59-block  0
+        -:   60:
+function _ZN5Lexer3RunERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 79%
+        1:   61:void Lexer::Run(std::string& input) {
+        -:   62:
+        -:   63:
+        1:   64:    int lineNumber = 1;
+        1:   64-block  0
+        -:   65:
+      199:   66:    while(input.size() > 0) {
+      199:   66-block  0
+call    0 returned 199
+branch  1 taken 198 (fallthrough)
+branch  2 taken 1
+      198:   66-block  1
+      198:   67:        if (input.at(0) == ' ') {
+      198:   67-block  0
+call    0 returned 198
+branch  1 taken 44 (fallthrough)
+branch  2 taken 154
+       44:   68:            input.erase(0, 1);
+       44:   68-block  0
+call    0 returned 44
+       44:   69:            continue;
+        -:   70:        }
+      154:   71:        if (input.at(0) == '\n') {
+      154:   71-block  0
+call    0 returned 154
+branch  1 taken 20 (fallthrough)
+branch  2 taken 134
+       20:   72:            lineNumber++;
+       20:   73:            input.erase(0, 1);
+       20:   73-block  0
+call    0 returned 20
+       20:   74:            continue;
+        -:   75:        }
+     134*:   76:        if (input.at(0) == '\t') {
+      134:   76-block  0
+call    0 returned 134
+branch  1 taken 0 (fallthrough)
+branch  2 taken 134
+    #####:   77:            input.erase(0, 1);
+    %%%%%:   77-block  0
+call    0 never executed
+    #####:   78:            continue;
+        -:   79:        }
+        -:   80:
+        -:   81:
+      134:   82:        int maxRead = 0;
+        -:   83:        int maxAutomation;
+        -:   84:        int currentRead;
+        -:   85:
+     2278:   86:        for (unsigned int i = 0; i < automata.size() - 2; i++) {
+      134:   86-block  0
+     2278:   86-block  1
+call    0 returned 2278
+branch  1 taken 2144 (fallthrough)
+branch  2 taken 134
+     2144:   86-block  2
+        -:   87:
+     2144:   88:            currentRead = automata.at(i)->Start(input);
+     2144:   88-block  0
+call    0 returned 2144
+call    1 returned 2144
+     2144:   89:            if (currentRead > maxRead) {
+branch  0 taken 117 (fallthrough)
+branch  1 taken 2027
+      117:   90:                maxRead = currentRead;
+      117:   91:                maxAutomation = i;
+      117:   91-block  0
+        -:   92:            } //else if (currentRead == maxRead) { //ID class 에서 신경쓰기
+        -:   93:
+        -:   94:            /* if( schemes or Facts ..etc == automata.at(i).~~) {
+        -:   95:             maxRead = currentRead;
+        -:   96:             maxIndex = i;
+        -:   97:             */
+        -:   98:            //}
+        -:   99:        }
+      134:  100:        if (maxRead > 0){
+      134:  100-block  0
+branch  0 taken 116 (fallthrough)
+branch  1 taken 18
+      116:  101:            tokens.push_back(automata.at(maxAutomation)->CreateToken(input.substr(0,maxRead),lineNumber));
+      116:  101-block  0
+call    0 returned 116
+call    1 returned 116
+call    2 returned 116
+branch  3 taken 116 (fallthrough)
+branch  4 taken 0 (throw)
+      116:  101-block  1
+call    5 returned 116
+branch  6 taken 116 (fallthrough)
+branch  7 taken 0 (throw)
+      116:  101-block  2
+call    8 returned 116
+    $$$$$:  101-block  3
+    $$$$$:  101-block  4
+call    9 never executed
+    $$$$$:  101-block  5
+call   10 never executed
+      116:  102:            lineNumber = automata.at(maxAutomation)->NewLinesRead() + lineNumber;
+call    0 returned 116
+call    1 returned 116
+        -:  103:        }
+        -:  104:        else {
+       18:  105:            maxRead = 1;
+       18:  106:            currentRead = automata.at(automata.size() - 2) ->Start(input);
+       18:  106-block  0
+call    0 returned 18
+call    1 returned 18
+call    2 returned 18
+        -:  107:
+       18:  108:            if(currentRead > maxRead) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 18
+    #####:  109:                maxRead = currentRead;
+    %%%%%:  109-block  0
+        -:  110:            }
+        -:  111:
+       18:  112:            tokens.push_back(automata.at(automata.size() - 2)->CreateToken(input.substr(0,maxRead),lineNumber));
+       18:  112-block  0
+call    0 returned 18
+call    1 returned 18
+call    2 returned 18
+call    3 returned 18
+branch  4 taken 18 (fallthrough)
+branch  5 taken 0 (throw)
+       18:  112-block  1
+call    6 returned 18
+branch  7 taken 18 (fallthrough)
+branch  8 taken 0 (throw)
+       18:  112-block  2
+call    9 returned 18
+    $$$$$:  112-block  3
+    $$$$$:  112-block  4
+call   10 never executed
+    $$$$$:  112-block  5
+call   11 never executed
+        -:  113:
+       18:  114:            lineNumber = automata.at(automata.size() - 2)->NewLinesRead() + lineNumber;
+call    0 returned 18
+call    1 returned 18
+call    2 returned 18
+        -:  115:            //add undefined token
+        -:  116:        }
+        -:  117:
+        -:  118:         // 맞는 경우가 정말로 한번도 없는지 파악해야함.
+      134:  119:        input.erase(0, maxRead);
+      134:  119-block  0
+call    0 returned 134
+        -:  120:    }
+        1:  121:    tokens.push_back(automata.at(automata.size() - 1)->CreateToken(input.substr(0,0),lineNumber));
+        1:  121-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  121-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  121-block  2
+call    9 returned 1
+    $$$$$:  121-block  3
+    $$$$$:  121-block  4
+call   10 never executed
+        -:  122:
+        -:  123:    // add end of file token
+        1:  124:    }
+        -:  125:
+        -:  126:    // TODO: convert this pseudo-code with the algorithm into actual C++ code
+        -:  127:    /*
+        -:  128:
+        -:  129:    set lineNumber to 1
+        -:  130:    // While there are more characters to tokenize
+        -:  131:    loop while input.size() > 0 {
+        -:  132:        set maxRead to 0
+        -:  133:        set maxAutomaton to the first automaton in automata
+        -:  134:
+        -:  135:        // TODO: you need to handle whitespace inbetween tokens
+        -:  136:
+        -:  137:        // Here is the "Parallel" part of the algorithm
+        -:  138:        // a  Each automaton runs with the same input
+        -:  139:        foreach automaton in auto2mat {
+        -:  140:            inputRead = automaton.Start(input)
+        -:  141:            if (inputRead > maxRead) {
+        -:  142:                set maxRead to inputRead
+        -:  143:                set maxAutomaton to automaton
+        -:  144:            }
+        -:  145:        }
+        -:  146:        // Here is the "Max" part of the algorithm
+        -:  147:        if maxRead > 0 {
+        -:  148:            set newToken to maxAutomaton.CreateToken(...)
+        -:  149:                increment lineNumber by maxAutomaton.NewLinesRead()
+        -:  150:                add newToken to collection of all tokens
+        -:  151:        }
+        -:  152:        // No automaton accepted input
+        -:  153:        // Create single character undefined token
+        -:  154:        else {
+        -:  155:            set maxRead to 1
+        -:  156:                set newToken to a  new undefined Token
+        -:  157:                (with first character of input)
+        -:  158:                add newToken to collection of all tokens
+        -:  159:        }
+        -:  160:        // Update `input` by removing characters read to create Token
+        -:  161:        remove maxRead characters from input
+        -:  162:    }
+        -:  163:    add end of file token to all tokens
+        -:  164:    */
+        -:  165:
+        -:  166:
+function _ZN5Lexer10totalTokenEv called 0 returned 0% blocks executed 0%
+    #####:  167:    int Lexer::totalToken() {
+    #####:  168:        return tokens.size();
+    %%%%%:  168-block  0
+call    0 never executed
+        -:  169:
+        -:  170:    }
+        -:  171:
+        -:  172:
+function _ZN5Lexer8toStringB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:  173:    std::string Lexer::toString() {
+    #####:  174:        std::ostringstream oss;
+    %%%%%:  174-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  174-block  1
+call    3 never executed
+    $$$$$:  174-block  2
+call    4 never executed
+        -:  175:
+    #####:  176:        for(unsigned int i = 0; i < tokens.size() ; i++){
+    %%%%%:  176-block  0
+    %%%%%:  176-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  177:            oss << tokens.at(i)->toString() << std::endl;
+    %%%%%:  177-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  177-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  177-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  177-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  177-block  4
+call   12 never executed
+    $$$$$:  177-block  5
+call   13 never executed
+    $$$$$:  177-block  6
+        -:  178:        }
+        -:  179:
+    #####:  180:        return oss.str();
+    %%%%%:  180-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  180-block  1
+        -:  181:    }

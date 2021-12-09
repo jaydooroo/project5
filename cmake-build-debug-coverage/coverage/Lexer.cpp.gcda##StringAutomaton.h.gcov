@@ -1,0 +1,31 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/StringAutomaton.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-13.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_STRINGAUTOMATON_H
+        -:    6:#define PROJECT1_STARTER_CODE_STRINGAUTOMATON_H
+        -:    7:
+        -:    8:#include "Automaton.h"
+        -:    9:
+        -:   10:class StringAutomaton: public Automaton {
+        -:   11:
+        -:   12:private:
+        -:   13:    void S1(const std:: string& input);
+        -:   14:    void S2(const std:: string& input);
+        -:   15:
+        -:   16:public:
+function _ZN15StringAutomatonC2Ev called 1 returned 100% blocks executed 100%
+        1:   17:    StringAutomaton() : Automaton(TokenType::STRING){}
+        1:   17-block  0
+call    0 returned 1
+        -:   18:   ~ StringAutomaton() {}
+        -:   19:    void S0(const std::string &input);
+        -:   20:
+        -:   21:};
+        -:   22:
+        -:   23:
+        -:   24:#endif //PROJECT1_STARTER_CODE_STRINGAUTOMATON_H

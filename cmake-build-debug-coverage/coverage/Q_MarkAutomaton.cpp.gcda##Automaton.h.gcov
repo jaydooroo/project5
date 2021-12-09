@@ -1,0 +1,82 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Automaton.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Q_MarkAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Q_MarkAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#ifndef AUTOMATON_H
+        -:    2:#define AUTOMATON_H
+        -:    3:#include "Token.h"
+        -:    4:
+        -:    5:class Automaton
+        -:    6:{
+        -:    7:protected:
+        -:    8:    int inputRead = 0;
+        -:    9:    int newLines = 0;
+        -:   10:    int index = 0;
+        -:   11:    TokenType type;
+        -:   12:
+        -:   13:public:
+        -:   14:    // Default constructor -- since we have a constructor that takes a parameter,
+        -:   15:    //   the compiler will autogenerate a default constructor if not explicit.
+        -:   16:    Automaton() : Automaton(TokenType::UNDEFINED) {}
+        -:   17:
+        -:   18:    Automaton(TokenType type) { this->type = type; }
+        -:   19:
+    #####:   20:     virtual ~ Automaton() {}
+------------------
+_ZN9AutomatonD0Ev:
+function _ZN9AutomatonD0Ev called 0 returned 0% blocks executed 0%
+    #####:   20:     virtual ~ Automaton() {}
+    %%%%%:   20-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN9AutomatonD2Ev:
+function _ZN9AutomatonD2Ev called 0 returned 0% blocks executed 0%
+    #####:   20:     virtual ~ Automaton() {}
+------------------
+        -:   21:
+        -:   22:    // Start the automaton and return the number of characters read
+        -:   23:    //   read == 0 indicates the input was rejected
+        -:   24:    //   read  > 0 indicates the input was accepted
+        -:   25:    int Start(const std::string& input) {
+        -:   26:        newLines = 0;
+        -:   27:        inputRead = 0;
+        -:   28:        index = 0;
+        -:   29:        S0(input);
+        -:   30:        return inputRead;
+        -:   31:    }
+        -:   32:
+        -:   33:    // Every subclass must define this method
+        -:   34:    virtual void S0(const std::string& input) = 0;
+        -:   35:
+function _ZN9Automaton4SerrEv called 0 returned 0% blocks executed 0%
+    #####:   36:    void Serr() {
+        -:   37:        // Indicate the input was rejected
+    #####:   38:        inputRead = 0;
+    #####:   39:    }
+        -:   40:
+function _ZN9Automaton11CreateTokenENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi called 0 returned 0% blocks executed 0%
+    #####:   41:    virtual Token* CreateToken(std::string input, int lineNumber) { return new Token(type, input, lineNumber); }
+    %%%%%:   41-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   41-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   41-block  2
+call    7 never executed
+    %%%%%:   41-block  3
+    $$$$$:   41-block  4
+call    8 never executed
+    $$$$$:   41-block  5
+call    9 never executed
+        -:   42:    // 이거 이용해서 라인넘버 파악 + description 초기화.
+        -:   43:
+        -:   44:    int NewLinesRead() const { return newLines; }
+        -:   45:};
+        -:   46:
+        -:   47:#endif // AUTOMATON_H
+        -:   48:

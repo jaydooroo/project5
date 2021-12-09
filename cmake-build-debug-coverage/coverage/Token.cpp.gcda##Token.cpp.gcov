@@ -1,0 +1,351 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Token.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Token.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Token.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Token.h"
+        -:    2:#include <sstream>
+        -:    3:
+function _ZN5TokenC2E9TokenTypeNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi called 135 returned 100% blocks executed 80%
+      135:    4:Token::Token(TokenType type, std::string description, int line) {
+      135:    4-block  0
+call    0 returned 135
+    $$$$$:    4-block  1
+call    1 never executed
+      135:    5:    this->type = type;
+      135:    6:    this->description = description;
+call    0 returned 135
+branch  1 taken 135 (fallthrough)
+branch  2 taken 0 (throw)
+      135:    7:    this->line = line;
+      135:    8:}
+      135:    8-block  0
+        -:    9:
+function _ZN5Token8toStringB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   10:std::string Token:: toString(){
+    #####:   11:    std::ostringstream oss;
+    %%%%%:   11-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   11-block  1
+call    3 never executed
+    $$$$$:   11-block  2
+call    4 never executed
+        -:   12:
+    #####:   13:    oss << "(" << dayToString(this->type) << ",\"" << this->description << "\"," << line <<")";
+    %%%%%:   13-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   13-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   13-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   13-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   13-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   13-block  5
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   13-block  6
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   13-block  7
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:   13-block  8
+call   24 never executed
+    $$$$$:   13-block  9
+call   25 never executed
+    $$$$$:   13-block 10
+        -:   14:
+    #####:   15:    return oss.str();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   15-block  0
+        -:   16:}
+        -:   17:
+function _ZN5Token11dayToStringB5cxx11E9TokenType called 1 returned 100% blocks executed 5%
+        1:   18:std::string Token::dayToString(TokenType tokenType) {
+        -:   19:
+        1:   20:    switch (tokenType) {
+        1:   20-block  0
+branch  0 taken 0
+branch  1 taken 0
+branch  2 taken 0
+branch  3 taken 1
+branch  4 taken 0
+branch  5 taken 0
+branch  6 taken 0
+branch  7 taken 0
+branch  8 taken 0
+branch  9 taken 0
+branch 10 taken 0
+branch 11 taken 0
+branch 12 taken 0
+branch 13 taken 0
+branch 14 taken 0
+branch 15 taken 0
+branch 16 taken 0
+branch 17 taken 0
+branch 18 taken 0
+    #####:   21:        case TokenType::COLON : return "COLON"; break;
+    %%%%%:   21-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   21-block  1
+call    4 never executed
+    $$$$$:   21-block  2
+call    5 never executed
+    $$$$$:   21-block  3
+call    6 never executed
+    #####:   22:        case TokenType::COLON_DASH : return "COLON_DASH"; break;
+    %%%%%:   22-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   22-block  1
+call    4 never executed
+    $$$$$:   22-block  2
+call    5 never executed
+    $$$$$:   22-block  3
+call    6 never executed
+    #####:   23:        case TokenType::STRING : return "STRING"; break;
+    %%%%%:   23-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   23-block  1
+call    4 never executed
+    $$$$$:   23-block  2
+call    5 never executed
+    $$$$$:   23-block  3
+call    6 never executed
+        1:   24:        case TokenType::UNDEFINED : return "UNDEFINED"; break;
+        1:   24-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   24-block  1
+call    4 returned 1
+    $$$$$:   24-block  2
+call    5 never executed
+    $$$$$:   24-block  3
+call    6 never executed
+    #####:   25:        case TokenType::PERIOD : return  "PERIOD"; break;
+    %%%%%:   25-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   25-block  1
+call    4 never executed
+    $$$$$:   25-block  2
+call    5 never executed
+    $$$$$:   25-block  3
+call    6 never executed
+    #####:   26:        case TokenType::Q_MARK: return "Q_MARK"; break;
+    %%%%%:   26-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   26-block  1
+call    4 never executed
+    $$$$$:   26-block  2
+call    5 never executed
+    $$$$$:   26-block  3
+call    6 never executed
+    #####:   27:        case TokenType::LEFT_PAREN: return "LEFT_PAREN"; break;
+    %%%%%:   27-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   27-block  1
+call    4 never executed
+    $$$$$:   27-block  2
+call    5 never executed
+    $$$$$:   27-block  3
+call    6 never executed
+    #####:   28:        case TokenType::MULTIPLY: return "MULTIPLY"; break;
+    %%%%%:   28-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   28-block  1
+call    4 never executed
+    $$$$$:   28-block  2
+call    5 never executed
+    $$$$$:   28-block  3
+call    6 never executed
+    #####:   29:        case TokenType::ADD: return "ADD"; break;
+    %%%%%:   29-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   29-block  1
+call    4 never executed
+    $$$$$:   29-block  2
+call    5 never executed
+    $$$$$:   29-block  3
+call    6 never executed
+    #####:   30:        case TokenType::SCHEMES: return "SCHEMES"; break;
+    %%%%%:   30-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   30-block  1
+call    4 never executed
+    $$$$$:   30-block  2
+call    5 never executed
+    $$$$$:   30-block  3
+call    6 never executed
+    #####:   31:        case TokenType::FACTS: return "FACTS"; break;
+    %%%%%:   31-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   31-block  1
+call    4 never executed
+    $$$$$:   31-block  2
+call    5 never executed
+    $$$$$:   31-block  3
+call    6 never executed
+    #####:   32:        case TokenType::RULES: return "RULES"; break;
+    %%%%%:   32-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   32-block  1
+call    4 never executed
+    $$$$$:   32-block  2
+call    5 never executed
+    $$$$$:   32-block  3
+call    6 never executed
+    #####:   33:        case TokenType::QUERIES: return "QUERIES"; break;
+    %%%%%:   33-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   33-block  1
+call    4 never executed
+    $$$$$:   33-block  2
+call    5 never executed
+    $$$$$:   33-block  3
+call    6 never executed
+    #####:   34:        case TokenType::RIGHT_PAREN: return "RIGHT_PAREN"; break;
+    %%%%%:   34-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   34-block  1
+call    4 never executed
+    $$$$$:   34-block  2
+call    5 never executed
+    $$$$$:   34-block  3
+call    6 never executed
+    #####:   35:        case TokenType::ID: return "ID"; break;
+    %%%%%:   35-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   35-block  1
+call    4 never executed
+    $$$$$:   35-block  2
+call    5 never executed
+    $$$$$:   35-block  3
+call    6 never executed
+    #####:   36:        case TokenType::COMMA: return "COMMA"; break;
+    %%%%%:   36-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   36-block  1
+call    4 never executed
+    $$$$$:   36-block  2
+call    5 never executed
+    $$$$$:   36-block  3
+call    6 never executed
+    #####:   37:        case TokenType::COMMENT: return "COMMENT"; break;
+    %%%%%:   37-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   37-block  1
+call    4 never executed
+    $$$$$:   37-block  2
+call    5 never executed
+    $$$$$:   37-block  3
+call    6 never executed
+    #####:   38:        case TokenType::_EOF: return "EOF"; break;
+    %%%%%:   38-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   38-block  1
+call    4 never executed
+    $$$$$:   38-block  2
+call    5 never executed
+    $$$$$:   38-block  3
+call    6 never executed
+        -:   39:    }
+    #####:   40:    return "ERROR";  // a string MUST be returned by the end
+    %%%%%:   40-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   40-block  1
+call    4 never executed
+    $$$$$:   40-block  2
+call    5 never executed
+        -:   41:}
+        -:   42:
+function _ZN5Token12getTokenTypeEv called 9 returned 100% blocks executed 100%
+        9:   43:TokenType Token::getTokenType() {
+        9:   44:    return type;
+        9:   44-block  0
+        -:   45:}
+        -:   46:
+function _ZN5Token14getDescriptionB5cxx11Ev called 1 returned 100% blocks executed 100%
+        1:   47:std::string Token::getDescription () {
+        1:   48:    return this->description;
+        1:   48-block  0
+call    0 returned 1
+        -:   49:}
+        -:   50:
+function _ZN5Token7getLineEv called 1 returned 100% blocks executed 100%
+        1:   51:int Token::getLine() {
+        1:   52:    return this->line;
+        1:   52-block  0
+        -:   53:}

@@ -1,0 +1,45 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/QueriesAutomaton.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/QueriesAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/QueriesAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_QUERIESAUTOMATON_H
+        -:    6:#define PROJECT1_STARTER_CODE_QUERIESAUTOMATON_H
+        -:    7:#include "Automaton.h"
+        -:    8:
+        -:    9:class QueriesAutomaton : public Automaton {
+        -:   10:
+        -:   11:private:
+        -:   12:    void S1(const std::string& input);
+        -:   13:    void S2(const std::string& input);
+        -:   14:    void S3(const std::string& input);
+        -:   15:    void S4(const std::string& input);
+        -:   16:    void S5(const std::string& input);
+        -:   17:    void S6(const std::string& input);
+        -:   18:
+        -:   19:public:
+        -:   20:    QueriesAutomaton() : Automaton(TokenType::QUERIES) {}
+        2:   21:   ~ QueriesAutomaton() {}
+------------------
+_ZN16QueriesAutomatonD0Ev:
+function _ZN16QueriesAutomatonD0Ev called 1 returned 100% blocks executed 100%
+        1:   21:   ~ QueriesAutomaton() {}
+        1:   21-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN16QueriesAutomatonD2Ev:
+function _ZN16QueriesAutomatonD2Ev called 1 returned 100% blocks executed 100%
+        1:   21:   ~ QueriesAutomaton() {}
+        1:   21-block  0
+call    0 returned 1
+------------------
+        -:   22:    void S0(const std::string& input);
+        -:   23:
+        -:   24:};
+        -:   25:
+        -:   26:
+        -:   27:#endif //PROJECT1_STARTER_CODE_QUERIESAUTOMATON_H

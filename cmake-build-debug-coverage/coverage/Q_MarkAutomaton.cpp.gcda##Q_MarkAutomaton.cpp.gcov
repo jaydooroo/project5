@@ -1,0 +1,26 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Q_MarkAutomaton.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Q_MarkAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Q_MarkAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#include "Q_MarkAutomaton.h"
+        -:    6:
+function _ZN15Q_MarkAutomaton2S0ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 134 returned 100% blocks executed 100%
+      134:    7:void Q_MarkAutomaton::S0(const std::string &input) {
+      134:    8:    if (input[index] == '?') {
+      134:    8-block  0
+call    0 returned 134
+branch  1 taken 6 (fallthrough)
+branch  2 taken 128
+        6:    9:        inputRead = 1;
+        6:    9-block  0
+        -:   10:    }
+        -:   11:    else {
+      128:   12:        Serr();
+      128:   12-block  0
+call    0 returned 128
+        -:   13:    }
+      134:   14:}

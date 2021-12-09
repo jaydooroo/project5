@@ -1,0 +1,34 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/RulesAutomaton.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_RULESAUTOMATON_H
+        -:    6:#define PROJECT1_STARTER_CODE_RULESAUTOMATON_H
+        -:    7:
+        -:    8:#include "Automaton.h"
+        -:    9:
+        -:   10:class RulesAutomaton : public Automaton {
+        -:   11:
+        -:   12:private:
+        -:   13:    void S1(const std::string& input);
+        -:   14:    void S2(const std::string& input);
+        -:   15:    void S3(const std::string& input);
+        -:   16:    void S4(const std::string& input);
+        -:   17:
+        -:   18:public:
+        -:   19:
+function _ZN14RulesAutomatonC2Ev called 1 returned 100% blocks executed 100%
+        1:   20:    RulesAutomaton() :Automaton(TokenType::RULES) {}
+        1:   20-block  0
+call    0 returned 1
+        -:   21:   ~ RulesAutomaton() { }
+        -:   22:    void S0 (const std::string& input);
+        -:   23:
+        -:   24:};
+        -:   25:
+        -:   26:
+        -:   27:#endif //PROJECT1_STARTER_CODE_RULESAUTOMATON_H

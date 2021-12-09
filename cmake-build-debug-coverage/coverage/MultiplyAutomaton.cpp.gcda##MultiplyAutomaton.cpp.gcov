@@ -1,0 +1,27 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/MultiplyAutomaton.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/MultiplyAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/MultiplyAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#include "MultiplyAutomaton.h"
+        -:    6:
+function _ZN17MultiplyAutomaton2S0ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 134 returned 100% blocks executed 80%
+      134:    7:void MultiplyAutomaton::S0(const std::string &input) {
+        -:    8:
+      134:    9:    if (input[index] == '*') {
+      134:    9-block  0
+call    0 returned 134
+branch  1 taken 0 (fallthrough)
+branch  2 taken 134
+    #####:   10:        inputRead = 1;
+    %%%%%:   10-block  0
+        -:   11:    }
+        -:   12:    else {
+      134:   13:        Serr();
+      134:   13-block  0
+call    0 returned 134
+        -:   14:    }
+      134:   15:}

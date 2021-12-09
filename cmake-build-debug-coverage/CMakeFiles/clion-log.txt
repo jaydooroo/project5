@@ -1,0 +1,4 @@
+Cannot generate into C:\Users\ejh61\CLionProjects\project4\cmake-build-debug-coverage
+It is already used for project \users\guest\e\ejh612\tmp\tmp.60y5MWDIxy
+
+Please either delete it manually or select another generation directory

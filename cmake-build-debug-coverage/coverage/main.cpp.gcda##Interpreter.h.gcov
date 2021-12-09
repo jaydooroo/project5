@@ -1,0 +1,62 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Interpreter.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-10-27.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_INTERPRETER_H
+        -:    6:#define PROJECT1_STARTER_CODE_INTERPRETER_H
+        -:    7:#include "DatalogProgram.h"
+        -:    8:#include "Database.h"
+        -:    9:
+        -:   10:class Interpreter {
+        -:   11:private:
+        -:   12:    DatalogProgram datalog;
+        -:   13:    Database database;
+        -:   14:
+        -:   15:public:
+function _ZN11InterpreterC2ER14DatalogProgram called 1 returned 100% blocks executed 67%
+        1:   16:    Interpreter(DatalogProgram &tempDatalog){
+        1:   16-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   16-block  1
+call    2 never executed
+    $$$$$:   16-block  2
+call    3 never executed
+        1:   17:        datalog = tempDatalog;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   18:        makesDatabase();
+        1:   18-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   19:    }
+        1:   19-block  0
+function _ZN11InterpreterD2Ev called 1 returned 100% blocks executed 100%
+        1:   20:    ~ Interpreter() {}
+        1:   20-block  0
+call    0 returned 1
+call    1 returned 1
+        -:   21:
+        -:   22:    void makesDatabase();
+        -:   23:
+        -:   24:    std::string initiateQueries ();
+        -:   25:
+        -:   26:    Relation applyQuery (Predicate query);  // Predicate query를 database에 적용해서 Relation으로 만들어 반환시켜줌.
+        -:   27:
+        -:   28:    std::string toString () {
+        -:   29:        return database.toString(); // database 값들 축력
+        -:   30:    }
+        -:   31:
+        -:   32:    std::string initiateRules ();
+        -:   33:
+        -:   34:    Relation applyRule (Predicate ruleToApply); // 하나의 룰을 가지고 database의 값들을 적용해서 relation으로 만들어 변환시켜줌.
+        -:   35:};
+        -:   36:
+        -:   37:
+        -:   38:#endif //PROJECT1_STARTER_CODE_INTERPRETER_H

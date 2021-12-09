@@ -1,0 +1,70 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/UndefinedAutomaton.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/UndefinedAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/UndefinedAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#include "UndefinedAutomaton.h"
+        -:    6:
+function _ZN18UndefinedAutomaton2S0ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 18 returned 100% blocks executed 32%
+       18:    7:void UndefinedAutomaton::S0(const std::string& input) {
+       18:    8:    if(input[index] == '\'') {
+       18:    8-block  0
+call    0 returned 18
+branch  1 taken 0 (fallthrough)
+branch  2 taken 18
+    #####:    9:        while((unsigned) index < input.size()){
+    %%%%%:    9-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   10:
+    #####:   11:            if(input[index] == '\n')
+    %%%%%:   11-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   12:                newLines++;
+    %%%%%:   12-block  0
+        -:   13:
+    #####:   14:            inputRead++;
+    #####:   15:            index++;
+    %%%%%:   15-block  0
+        -:   16:        }
+        -:   17:    }
+      18*:   18:    else if(input[index] == '#' && input[index + 1] == '|'){
+       18:   18-block  0
+call    0 returned 18
+branch  1 taken 0 (fallthrough)
+branch  2 taken 18
+    %%%%%:   18-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   18-block  2
+       18:   18-block  3
+       18:   18-block  4
+branch  6 taken 0 (fallthrough)
+branch  7 taken 18
+    #####:   19:        while((unsigned) index < input.size()){
+    %%%%%:   19-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   20:
+    #####:   21:            if(input[index] == '\n')
+    %%%%%:   21-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   22:                newLines++;
+    %%%%%:   22-block  0
+        -:   23:
+    #####:   24:            inputRead++;
+    #####:   25:            index++;
+    %%%%%:   25-block  0
+        -:   26:        }
+        -:   27:    }
+       18:   28:}

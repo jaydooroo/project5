@@ -1,0 +1,107 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/StringAutomaton.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/StringAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/StringAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-13.
+        -:    3://
+        -:    4:
+        -:    5:#include "StringAutomaton.h"
+        -:    6:
+function _ZN15StringAutomaton2S0ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 134 returned 100% blocks executed 88%
+      134:    7:void StringAutomaton::S0(const std::string &input) {
+        -:    8:
+      134:    9:    if((unsigned) index >= input.size()){
+      134:    9-block  0
+call    0 returned 134
+branch  1 taken 0 (fallthrough)
+branch  2 taken 134
+    #####:   10:        Serr();
+    %%%%%:   10-block  0
+call    0 never executed
+        -:   11:    }
+      134:   12:    else if(input[index] == '\''){
+      134:   12-block  0
+call    0 returned 134
+branch  1 taken 16 (fallthrough)
+branch  2 taken 118
+       16:   13:        inputRead++;
+       16:   14:        index++;
+        -:   15:
+       16:   16:        S1(input);
+       16:   16-block  0
+call    0 returned 16
+        -:   17:    }
+        -:   18:    else{
+      118:   19:        Serr();
+      118:   19-block  0
+call    0 returned 118
+        -:   20:    }
+      134:   21:}
+        -:   22:
+function _ZN15StringAutomaton2S1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 121 returned 100% blocks executed 82%
+      121:   23:void StringAutomaton::S1(const std::string &input) {
+        -:   24:
+      121:   25:    if((unsigned) index >= input.size()){
+      121:   25-block  0
+call    0 returned 121
+branch  1 taken 0 (fallthrough)
+branch  2 taken 121
+    #####:   26:        Serr();
+    %%%%%:   26-block  0
+call    0 never executed
+        -:   27:    }
+      121:   28:    else if(input[index] == '\''){
+      121:   28-block  0
+call    0 returned 121
+branch  1 taken 16 (fallthrough)
+branch  2 taken 105
+       16:   29:        inputRead++;
+       16:   30:        index++;
+       16:   31:        S2(input);
+       16:   31-block  0
+call    0 returned 16
+        -:   32:    }
+      105:   33:    else if(input[index]=='\n'){
+      105:   33-block  0
+call    0 returned 105
+branch  1 taken 0 (fallthrough)
+branch  2 taken 105
+    #####:   34:        inputRead++;
+    #####:   35:        index++;
+    #####:   36:        newLines++;
+    #####:   37:        S1(input);
+    %%%%%:   37-block  0
+call    0 never executed
+        -:   38:    }
+        -:   39:    else {
+      105:   40:        inputRead++;
+      105:   41:        index++;
+      105:   42:        S1(input);
+      105:   42-block  0
+call    0 returned 105
+        -:   43:    }
+      121:   44:}
+        -:   45:
+function _ZN15StringAutomaton2S2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 16 returned 100% blocks executed 83%
+       16:   46:void StringAutomaton::S2(const std::string &input) {
+        -:   47:
+       16:   48:    if((unsigned) index >= input.size()){
+       16:   48-block  0
+call    0 returned 16
+branch  1 taken 16 (fallthrough)
+branch  2 taken 0
+        -:   49:
+        -:   50:    }
+       16:   51:    else if(input[index] == '\''){
+       16:   51-block  0
+call    0 returned 16
+branch  1 taken 0 (fallthrough)
+branch  2 taken 16
+    #####:   52:        inputRead++;
+    #####:   53:        index++;
+    #####:   54:        S1(input);
+    %%%%%:   54-block  0
+call    0 never executed
+        -:   55:    }
+       16:   56:}

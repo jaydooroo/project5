@@ -1,0 +1,52 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/ColonDashAutomaton.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/ColonDashAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/ColonDashAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "ColonDashAutomaton.h"
+        -:    2:
+function _ZN18ColonDashAutomaton2S0ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 134 returned 100% blocks executed 100%
+      134:    3:void ColonDashAutomaton::S0(const std::string& input) {
+      134:    4:    if (input[index] == ':') {
+      134:    4-block  0
+call    0 returned 134
+branch  1 taken 5 (fallthrough)
+branch  2 taken 129
+        5:    5:        inputRead++;
+        5:    6:        index++;
+        5:    7:        S1(input);
+        5:    7-block  0
+call    0 returned 5
+        -:    8:    }
+        -:    9:    else {
+      129:   10:        Serr();
+      129:   10-block  0
+call    0 returned 129
+        -:   11:    }
+      134:   12:}
+        -:   13:
+function _ZN18ColonDashAutomaton2S1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 5 returned 100% blocks executed 88%
+        5:   14:void ColonDashAutomaton::S1(const std::string& input) {
+        -:   15:
+        5:   16:    if((unsigned) index >= input.size()){
+        5:   16-block  0
+call    0 returned 5
+branch  1 taken 0 (fallthrough)
+branch  2 taken 5
+    #####:   17:        Serr();
+    %%%%%:   17-block  0
+call    0 never executed
+        -:   18:    }
+        5:   19:    else if (input[index] == '-') {
+        5:   19-block  0
+call    0 returned 5
+branch  1 taken 1 (fallthrough)
+branch  2 taken 4
+        1:   20:        inputRead++;
+        1:   20-block  0
+        -:   21:    }
+        -:   22:    else {
+        4:   23:        Serr();
+        4:   23-block  0
+call    0 returned 4
+        -:   24:    }
+        5:   25:}

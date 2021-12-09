@@ -1,0 +1,27 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/ColonDashAutomaton.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#ifndef COLONDASHAUTOMATON_H
+        -:    2:#define COLONDASHAUTOMATON_H
+        -:    3:
+        -:    4:#include "Automaton.h"
+        -:    5:
+        -:    6:class ColonDashAutomaton : public Automaton
+        -:    7:{
+        -:    8:private:
+        -:    9:    void S1(const std::string& input);
+        -:   10:
+        -:   11:public:
+function _ZN18ColonDashAutomatonC2Ev called 1 returned 100% blocks executed 100%
+        1:   12:    ColonDashAutomaton() : Automaton(TokenType::COLON_DASH) {}  // Call the base constructor
+        1:   12-block  0
+call    0 returned 1
+        -:   13:    ~ ColonDashAutomaton() {}
+        -:   14:    void S0(const std::string& input);
+        -:   15:
+        -:   16:
+        -:   17:};
+        -:   18:
+        -:   19:#endif // COLONDASHAUTOMATON_H
+        -:   20:

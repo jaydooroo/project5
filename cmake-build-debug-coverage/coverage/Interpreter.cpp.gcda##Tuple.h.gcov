@@ -1,0 +1,55 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Tuple.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Interpreter.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Interpreter.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-10-26.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_TUPLE_H
+        -:    6:#define PROJECT1_STARTER_CODE_TUPLE_H
+        -:    7:
+        -:    8:#include <vector>
+        -:    9:#include <string>
+        -:   10:#include <sstream>
+        -:   11:
+        -:   12:class Tuple {
+        -:   13:
+        -:   14:private:
+        -:   15:    std::vector<std::string> values;
+        -:   16:
+        -:   17:public:
+        -:   18:    Tuple (std::string value) {
+        -:   19:        values.push_back(value);
+        -:   20:    }
+function _ZN5TupleC2Ev called 0 returned 0% blocks executed 0%
+    #####:   21:    Tuple() {}
+    %%%%%:   21-block  0
+call    0 never executed
+        -:   22:
+function _ZN5TupleD2Ev called 0 returned 0% blocks executed 0%
+    #####:   23:    ~Tuple() {}
+    %%%%%:   23-block  0
+call    0 never executed
+        -:   24:
+        -:   25:   void SetTuple (std::string value);
+        -:   26:
+        -:   27:    std::vector<std::string> &getTuple ();
+        -:   28:
+function _ZNK5TupleeqERKS_ called 0 returned 0% blocks executed 0%
+    #####:   29:    bool operator == (const Tuple &rhs) const {
+    #####:   30:        return values == rhs.values;
+    %%%%%:   30-block  0
+call    0 never executed
+        -:   31:    }
+        -:   32:
+        -:   33:    bool operator < (const Tuple &rhs) const{
+        -:   34:        return values < rhs.values;
+        -:   35:    }
+        -:   36:
+        -:   37:    std::string toString ();
+        -:   38:
+        -:   39:};
+        -:   40:
+        -:   41:
+        -:   42:#endif //PROJECT1_STARTER_CODE_TUPLE_H

@@ -1,0 +1,26 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/UndefinedAutomaton.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Lexer.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_UNDEFINEDAUTOMATON_H
+        -:    6:#define PROJECT1_STARTER_CODE_UNDEFINEDAUTOMATON_H
+        -:    7:#include "Automaton.h"
+        -:    8:
+        -:    9:class UndefinedAutomaton: public Automaton {
+        -:   10:
+        -:   11:public:
+function _ZN18UndefinedAutomatonC2Ev called 1 returned 100% blocks executed 100%
+        1:   12:    UndefinedAutomaton() : Automaton(TokenType::UNDEFINED) {}
+        1:   12-block  0
+call    0 returned 1
+        -:   13:   ~ UndefinedAutomaton() { }
+        -:   14:    void S0 (const std::string& input);
+        -:   15:
+        -:   16:};
+        -:   17:
+        -:   18:
+        -:   19:#endif //PROJECT1_STARTER_CODE_UNDEFINEDAUTOMATON_H

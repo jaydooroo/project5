@@ -1,0 +1,22 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/ColonAutomaton.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/ColonAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/ColonAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "ColonAutomaton.h"
+        -:    2:
+function _ZN14ColonAutomaton2S0ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 134 returned 100% blocks executed 100%
+      134:    3:void ColonAutomaton::S0(const std::string& input) {
+      134:    4:    if (input[index] == ':') {
+      134:    4-block  0
+call    0 returned 134
+branch  1 taken 5 (fallthrough)
+branch  2 taken 129
+        5:    5:        inputRead = 1;
+        5:    5-block  0
+        -:    6:    }
+        -:    7:    else {
+      129:    8:        Serr();
+      129:    8-block  0
+call    0 returned 129
+        -:    9:    }
+      134:   10:}

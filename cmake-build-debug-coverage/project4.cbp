@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="project4"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project4">
+				<Option output="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/project4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 project4"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project4/fast">
+				<Option output="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/project4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 project4/fast"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/AddAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/AddAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Automaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/ColonAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/ColonAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/ColonDashAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/ColonDashAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/CommaAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/CommaAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/CommentAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/CommentAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Database.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Database.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/DatalogProgram.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/DatalogProgram.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/EOFAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/EOFAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/FactsAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/FactsAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Header.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Header.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/IDAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/IDAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Interpreter.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Interpreter.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/LeftParenAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/LeftParenAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Lexer.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Lexer.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/MultiplyAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/MultiplyAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Parameter.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Parameter.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Parser.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Parser.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/PeriodAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/PeriodAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Predicate.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Predicate.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Q_MarkAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Q_MarkAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/QueriesAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/QueriesAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Relation.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Relation.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/RightParenAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/RightParenAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Rule.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Rule.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/RulesAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/RulesAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/SchemesAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/SchemesAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/StringAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/StringAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Token.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Token.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Tuple.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Tuple.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/UndefinedAutomaton.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/UndefinedAutomaton.h">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/main.cpp">
+			<Option target="project4"/>
+		</Unit>
+		<Unit filename="/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

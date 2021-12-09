@@ -1,0 +1,145 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/RulesAutomaton.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/RulesAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/RulesAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#include "RulesAutomaton.h"
+        -:    6:
+function _ZN14RulesAutomaton2S0ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 134 returned 100% blocks executed 100%
+      134:    7:void RulesAutomaton::S0(const std::string &input) {
+      134:    8:    if(input[index] == 'R') {
+      134:    8-block  0
+call    0 returned 134
+branch  1 taken 1 (fallthrough)
+branch  2 taken 133
+        1:    9:        inputRead++;
+        1:   10:        index++;
+        1:   11:        S1(input);
+        1:   11-block  0
+call    0 returned 1
+        -:   12:    }
+        -:   13:    else {
+      133:   14:        Serr();
+      133:   14-block  0
+call    0 returned 133
+        -:   15:    }
+      134:   16:}
+        -:   17:
+function _ZN14RulesAutomaton2S1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 75%
+        1:   18:void RulesAutomaton::S1(const std::string &input) {
+        1:   19:    if((unsigned) index >= input.size()){
+        1:   19-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    #####:   20:        Serr();
+    %%%%%:   20-block  0
+call    0 never executed
+        -:   21:    }
+        1:   22:    else if(input[index] == 'u') {
+        1:   22-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   23:        inputRead++;
+        1:   24:        index++;
+        1:   25:        S2(input);
+        1:   25-block  0
+call    0 returned 1
+        -:   26:    }
+        -:   27:    else {
+    #####:   28:        Serr();
+    %%%%%:   28-block  0
+call    0 never executed
+        -:   29:    }
+        1:   30:}
+        -:   31:
+function _ZN14RulesAutomaton2S2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 75%
+        1:   32:void RulesAutomaton::S2(const std::string &input) {
+        1:   33:    if((unsigned) index >= input.size()){
+        1:   33-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    #####:   34:        Serr();
+    %%%%%:   34-block  0
+call    0 never executed
+        -:   35:    }
+        1:   36:    else if(input[index] == 'l') {
+        1:   36-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   37:        inputRead++;
+        1:   38:        index++;
+        1:   39:        S3(input);
+        1:   39-block  0
+call    0 returned 1
+        -:   40:    }
+        -:   41:    else {
+    #####:   42:        Serr();
+    %%%%%:   42-block  0
+call    0 never executed
+        -:   43:    }
+        1:   44:}
+        -:   45:
+function _ZN14RulesAutomaton2S3ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 75%
+        1:   46:void RulesAutomaton::S3(const std::string &input) {
+        1:   47:    if((unsigned) index >= input.size()){
+        1:   47-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    #####:   48:        Serr();
+    %%%%%:   48-block  0
+call    0 never executed
+        -:   49:    }
+        1:   50:    else if(input[index] == 'e') {
+        1:   50-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   51:        inputRead++;
+        1:   52:        index++;
+        1:   53:        S4(input);
+        1:   53-block  0
+call    0 returned 1
+        -:   54:    }
+        -:   55:    else {
+    #####:   56:        Serr();
+    %%%%%:   56-block  0
+call    0 never executed
+        -:   57:    }
+        1:   58:}
+        -:   59:
+function _ZN14RulesAutomaton2S4ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 75%
+        1:   60:void RulesAutomaton::S4(const std::string &input) {
+        1:   61:    if((unsigned) index >= input.size()){
+        1:   61-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    #####:   62:        Serr();
+    %%%%%:   62-block  0
+call    0 never executed
+        -:   63:    }
+        1:   64:    else if(input[index] == 's') {
+        1:   64-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   65:        inputRead++;
+        1:   65-block  0
+        -:   66:    }
+        -:   67:    else {
+    #####:   68:        Serr();
+    %%%%%:   68-block  0
+call    0 never executed
+        -:   69:    }
+        1:   70:}
+        -:   71:
+        -:   72:
+        -:   73:

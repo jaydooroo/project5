@@ -1,0 +1,108 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Database.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Database.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Database.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-10-26.
+        -:    3://
+        -:    4:
+        -:    5:#include "Database.h"
+        -:    6:
+function _ZN8Database11getRelationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:    7:Relation &Database::getRelation (std::string name) {
+    #####:    8:    return database[name];
+    %%%%%:    8-block  0
+call    0 never executed
+        -:    9:}
+function _ZN8Database18databaseTuplesSizeEv called 2 returned 100% blocks executed 70%
+        2:   10:unsigned int Database::databaseTuplesSize(){
+        2:   11:    unsigned int tuplesSize = 0;
+        2:   12:    std::map<std::string, Relation>::iterator iter;
+        2:   12-block  0
+call    0 returned 2
+        -:   13:
+       2*:   14:    for(iter = database.begin(); iter != database.end(); iter++) {
+call    0 returned 2
+        2:   14-block  0
+call    1 returned 2
+call    2 returned 2
+branch  3 taken 0 (fallthrough)
+branch  4 taken 2
+    #####:   15:        tuplesSize += iter->second.tupleSize();
+    %%%%%:   15-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:   16:    }
+        -:   17:
+        2:   18:    return tuplesSize;
+        2:   18-block  0
+        -:   19:}
+        -:   20:
+function _ZN8Database8toStringB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   21:std::string Database::toString () {
+    #####:   22:    std::ostringstream oss;
+    %%%%%:   22-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   22-block  1
+call    3 never executed
+    $$$$$:   22-block  2
+call    4 never executed
+    #####:   23:    std::map<std::string, Relation>::iterator iter;
+    %%%%%:   23-block  0
+call    0 never executed
+        -:   24:
+    #####:   25:    for(iter = database.begin(); iter != database.end(); iter++){
+call    0 never executed
+    %%%%%:   25-block  0
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    #####:   26:        oss << "Key: " << iter ->first << "value " << std::endl << iter->second.toString() << std::endl;
+    %%%%%:   26-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   26-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   26-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   26-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   26-block  4
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   26-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   26-block  6
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:   26-block  7
+call   23 never executed
+call   24 never executed
+    $$$$$:   26-block  8
+call   25 never executed
+    $$$$$:   26-block  9
+        -:   27:    }
+    #####:   28:    return oss.str();
+    %%%%%:   28-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   28-block  1
+        -:   29:}

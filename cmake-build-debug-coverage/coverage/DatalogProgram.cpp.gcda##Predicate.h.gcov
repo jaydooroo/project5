@@ -1,0 +1,59 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Predicate.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/DatalogProgram.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/DatalogProgram.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-25.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_PREDICATE_H
+        -:    6:#define PROJECT1_STARTER_CODE_PREDICATE_H
+        -:    7:#include <vector>
+        -:    8:#include <string>
+        -:    9:#include <sstream>
+        -:   10:#include "Parameter.h"
+        -:   11:
+        -:   12:class Predicate {
+        -:   13:private:
+        -:   14:    std::string ID;
+        -:   15:    std::vector <Parameter> insideString;
+        -:   16:
+        -:   17:public:
+        -:   18:Predicate (std::string tempID): ID(tempID) {}
+        -:   19:Predicate() {}
+        -:   20:
+function _ZN9PredicateD2Ev called 0 returned 0% blocks executed 0%
+    #####:   21:~Predicate() {}
+    %%%%%:   21-block  0
+call    0 never executed
+call    1 never executed
+        -:   22:
+        -:   23:void setMainID (std::string tempID) {
+        -:   24:    ID = tempID;
+        -:   25:}
+        -:   26:
+        -:   27:void setID (std::string tempID) {
+        -:   28:    Parameter tempSet("ID",tempID);
+        -:   29:    insideString.push_back(tempSet);
+        -:   30:}
+        -:   31:
+        -:   32:void setString (std::string tempString) {
+        -:   33:    Parameter tempSet("STRING", tempString);
+        -:   34:    insideString.push_back(tempSet);
+        -:   35:}
+        -:   36:
+function _ZN9Predicate15returnParameterEv called 0 returned 0% blocks executed 0%
+    #####:   37:std::vector<Parameter> &returnParameter () {
+    #####:   38:    return insideString;
+    %%%%%:   38-block  0
+        -:   39:}
+        -:   40:
+        -:   41:std::string returnID() {
+        -:   42:    return ID;
+        -:   43:}
+        -:   44:
+        -:   45:std::string toString ();
+        -:   46:};
+        -:   47:
+        -:   48:
+        -:   49:#endif //PROJECT1_STARTER_CODE_PREDICATE_H

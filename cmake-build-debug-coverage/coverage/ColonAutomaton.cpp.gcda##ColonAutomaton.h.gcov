@@ -1,0 +1,33 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/ColonAutomaton.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/ColonAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/ColonAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#ifndef COLONAUTOMATON_H
+        -:    2:#define COLONAUTOMATON_H
+        -:    3:
+        -:    4:#include "Automaton.h"
+        -:    5:
+        -:    6:class ColonAutomaton : public Automaton
+        -:    7:{
+        -:    8:public:
+        -:    9:    ColonAutomaton() : Automaton(TokenType::COLON) {}  // Call the base constructor
+        2:   10:    ~ColonAutomaton() {}
+------------------
+_ZN14ColonAutomatonD0Ev:
+function _ZN14ColonAutomatonD0Ev called 1 returned 100% blocks executed 100%
+        1:   10:    ~ColonAutomaton() {}
+        1:   10-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN14ColonAutomatonD2Ev:
+function _ZN14ColonAutomatonD2Ev called 1 returned 100% blocks executed 100%
+        1:   10:    ~ColonAutomaton() {}
+        1:   10-block  0
+call    0 returned 1
+------------------
+        -:   11:    void S0(const std::string& input);
+        -:   12:};
+        -:   13:
+        -:   14:#endif // COLONAUTOMATON_H
+        -:   15:

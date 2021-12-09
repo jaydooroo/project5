@@ -1,0 +1,146 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/IDAutomaton.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/IDAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/IDAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#include "IDAutomaton.h"
+        -:    6:
+function _ZN11IDAutomaton2S0ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 134 returned 100% blocks executed 100%
+      134:    7:void IDAutomaton::S0(const std::string &input) {
+      134:    8:    if(isalpha(input[index])){
+      134:    8-block  0
+call    0 returned 134
+branch  1 taken 36 (fallthrough)
+branch  2 taken 98
+       36:    9:        inputRead++;
+       36:   10:        index++;
+       36:   11:        S1(input);
+       36:   11-block  0
+call    0 returned 36
+        -:   12:    }
+        -:   13:    else {
+       98:   14:        Serr();
+       98:   14-block  0
+call    0 returned 98
+        -:   15:    }
+      134:   16:}
+        -:   17:
+function _ZN11IDAutomaton2S1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 36 returned 100% blocks executed 71%
+       36:   18:void IDAutomaton::S1(const std::string &input) {
+        -:   19:
+       36:   20:    if((unsigned) index < input.size()) {
+       36:   20-block  0
+call    0 returned 36
+branch  1 taken 36 (fallthrough)
+branch  2 taken 0
+      130:   21:        while (isalpha(input[index]) || isalnum(input[index])) {
+      130:   21-block  0
+call    0 returned 130
+branch  1 taken 36 (fallthrough)
+branch  2 taken 94
+       36:   21-block  1
+call    3 returned 36
+branch  4 taken 0 (fallthrough)
+branch  5 taken 36
+       94:   21-block  2
+       36:   21-block  3
+      130:   21-block  4
+branch  6 taken 94 (fallthrough)
+branch  7 taken 36
+       94:   22:            inputRead++;
+       94:   23:            index++;
+       94:   23-block  0
+        -:   24:        }
+        -:   25:        // discern if it is the strings
+       71:   26:        if(input.substr(0,inputRead) == "Schemes" ||input.substr(0,inputRead) == "Facts"
+       35:   26-block  0
+call    0 returned 35
+branch  1 taken 35 (fallthrough)
+branch  2 taken 0 (throw)
+       35:   26-block  1
+call    3 returned 35
+branch  4 taken 34 (fallthrough)
+branch  5 taken 1
+       35:   26-block  2
+call    6 returned 35
+       36:   26-block  3
+branch  7 taken 36 (fallthrough)
+branch  8 taken 0
+       36:   26-block  4
+call    9 returned 36
+       36:   26-block  5
+branch 10 taken 4 (fallthrough)
+branch 11 taken 32
+    $$$$$:   26-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   26-block  7
+call   14 never executed
+    $$$$$:   26-block  8
+    $$$$$:   26-block  9
+branch 15 never executed
+branch 16 never executed
+    $$$$$:   26-block 10
+call   17 never executed
+       71:   27:        ||input.substr(0,inputRead) == "Rules"||input.substr(0,inputRead) == "Queries"){
+       36:   27-block  0
+call    0 returned 36
+branch  1 taken 36 (fallthrough)
+branch  2 taken 0 (throw)
+       36:   27-block  1
+call    3 returned 36
+branch  4 taken 35 (fallthrough)
+branch  5 taken 1
+       34:   27-block  2
+call    6 returned 34
+branch  7 taken 34 (fallthrough)
+branch  8 taken 0 (throw)
+       34:   27-block  3
+call    9 returned 34
+branch 10 taken 33 (fallthrough)
+branch 11 taken 1
+       33:   27-block  4
+call   12 returned 33
+branch 13 taken 33 (fallthrough)
+branch 14 taken 0 (throw)
+       33:   27-block  5
+call   15 returned 33
+branch 16 taken 1 (fallthrough)
+branch 17 taken 32
+        4:   27-block  6
+       32:   27-block  7
+       36:   27-block  8
+branch 18 taken 33 (fallthrough)
+branch 19 taken 3
+       33:   27-block  9
+call   20 returned 33
+       36:   27-block 10
+branch 21 taken 34 (fallthrough)
+branch 22 taken 2
+       34:   27-block 11
+call   23 returned 34
+       36:   27-block 12
+branch 24 taken 35 (fallthrough)
+branch 25 taken 1
+    $$$$$:   27-block 13
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   27-block 14
+call   28 never executed
+    $$$$$:   27-block 15
+    $$$$$:   27-block 16
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   27-block 17
+call   31 never executed
+    $$$$$:   27-block 18
+        4:   28:            Serr();
+        4:   28-block  0
+call    0 returned 4
+        -:   29:        }
+        -:   30:    }
+       36:   31:}
+       36:   31-block  0

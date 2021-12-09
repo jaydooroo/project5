@@ -1,0 +1,1195 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Parser.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Parser.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Parser.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2://
+        -:    3:// Created by ejh61 on 2021-09-23.
+        -:    4://
+        -:    5:
+        -:    6:#include "Parser.h"
+        -:    7:#include <iostream>
+        -:    8:
+        -:    9:
+function _ZN6Parser8toStringB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   10:std::string Parser::toString () {
+    #####:   11:    std::ostringstream oss;
+    %%%%%:   11-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   11-block  1
+call    3 never executed
+    $$$$$:   11-block  2
+call    4 never executed
+        -:   12:
+    #####:   13:    for (unsigned int i = 0; i < tokens.size(); i++) {
+    %%%%%:   13-block  0
+    %%%%%:   13-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   13-block  2
+        -:   14:
+    #####:   15:        oss << tokens.at(i) << std::endl;
+    %%%%%:   15-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   15-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   15-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        -:   16:    }
+        -:   17:
+    #####:   18:    return oss.str();
+    %%%%%:   18-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   18-block  1
+        -:   19:}
+        -:   20:
+function _ZN6Parser12printDatalogEv called 0 returned 0% blocks executed 0%
+    #####:   21:void Parser::printDatalog () {
+    #####:   22:    std::cout << datalog.toString();
+    %%%%%:   22-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   22-block  1
+call    4 never executed
+    $$$$$:   22-block  2
+call    5 never executed
+    #####:   23:}
+        -:   24:
+        -:   25:
+function _ZN6Parser12datalogParseB5cxx11Ev called 1 returned 100% blocks executed 37%
+        1:   26:std::string Parser::datalogParse() {
+        1:   27:    int i = 0;
+        -:   28:    try {
+        -:   29:
+        1:   30:        if (match(i,TokenType::SCHEMES)) {
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   30-block  1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0
+        1:   31:            i++;
+        1:   32:            if (match(i,TokenType::COLON)) {
+        1:   32-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   32-block  1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0
+        1:   33:                i++;
+        1:   34:                schemeParse(i);
+        1:   34-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+    #####:   35:                schemeListParse(i);
+    %%%%%:   35-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   36:                if (match(i,TokenType::FACTS)) {
+    %%%%%:   36-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   36-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:   37:                    i++;
+    #####:   38:                    if (match(i,TokenType::COLON)) {
+    %%%%%:   38-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   38-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:   39:                        i++;
+    #####:   40:                        factListParse(i);
+    %%%%%:   40-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   41:                        if (match(i,TokenType::RULES)) {
+    %%%%%:   41-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   41-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:   42:                            i++;
+    #####:   43:                            if (match(i,TokenType::COLON)) {
+    %%%%%:   43-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   43-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:   44:                                i++;
+    #####:   45:                                ruleListParse(i);
+    %%%%%:   45-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   46:                                if (match(i,TokenType::QUERIES)) {
+    %%%%%:   46-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   46-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:   47:                                    i++;
+    #####:   48:                                    if (match(i,TokenType::COLON)){
+    %%%%%:   48-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   48-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:   49:                                        i++;
+    #####:   50:                                        queryParse(i);
+    %%%%%:   50-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   51:                                        queryListParse(i);
+    %%%%%:   51-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   52:                                        if (match(i,TokenType::_EOF)){
+    %%%%%:   52-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   52-block  1
+branch  3 never executed
+branch  4 never executed
+        -:   53:
+    #####:   54:                                            std::string tempString = "Success!";
+    %%%%%:   54-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+    $$$$$:   54-block  1
+    #####:   55:                                            return tempString;
+call    0 never executed
+        -:   56:
+    #####:   57:                                        } else throw i;
+    %%%%%:   57-block  0
+call    0 never executed
+call    1 never executed
+    #####:   58:                                    }else throw i;
+    %%%%%:   58-block  0
+call    0 never executed
+call    1 never executed
+    #####:   59:                                } else throw i;
+    %%%%%:   59-block  0
+call    0 never executed
+call    1 never executed
+    #####:   60:                            } else throw i;
+    %%%%%:   60-block  0
+call    0 never executed
+call    1 never executed
+    #####:   61:                        } else throw i;
+    %%%%%:   61-block  0
+call    0 never executed
+call    1 never executed
+    #####:   62:                    } else throw i;
+    %%%%%:   62-block  0
+call    0 never executed
+call    1 never executed
+    #####:   63:                } else throw i;
+    %%%%%:   63-block  0
+call    0 never executed
+call    1 never executed
+    #####:   64:            } else throw i;
+    %%%%%:   64-block  0
+call    0 never executed
+call    1 never executed
+    #####:   65:        } else throw i;
+    %%%%%:   65-block  0
+call    0 never executed
+call    1 never executed
+        -:   66:    }
+        2:   67:    catch (int index) {
+        1:   67-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   67-block  1
+call    2 never executed
+        2:   68:        std::ostringstream oss;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   68-block  0
+call    3 returned 1
+    $$$$$:   68-block  1
+call    4 never executed
+        1:   69:        oss << "Failure!" << std::endl;
+        1:   69-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   69-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   70:        oss << "  (" << tokens.at(index)->dayToString(tokens.at(index)->getTokenType()) << ",\"" << tokens.at(index)->getDescription() << "\","
+        1:   70-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   70-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   70-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   70-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   70-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   70-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   70-block  6
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   70-block  7
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   70-block  8
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   70-block  9
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   70-block 10
+call   30 returned 1
+branch 31 taken 1 (fallthrough)
+branch 32 taken 0 (throw)
+        1:   70-block 11
+call   33 returned 1
+call   34 returned 1
+    $$$$$:   70-block 12
+call   35 never executed
+    $$$$$:   70-block 13
+    $$$$$:   70-block 14
+call   36 never executed
+    $$$$$:   70-block 15
+        1:   71:            << tokens.at(index)->getLine() <<")";
+        1:   71-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   71-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   71-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   71-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   72:        return oss.str();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   73:    }
+        -:   74:}
+        -:   75:
+        -:   76:
+function _ZN6Parser15schemeListParseERi called 0 returned 0% blocks executed 0%
+    #####:   77:void Parser::schemeListParse(int &index){
+        -:   78:
+    #####:   79:    if (match(index,TokenType::ID)){
+    %%%%%:   79-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   80:        schemeParse(index);
+    %%%%%:   80-block  0
+call    0 never executed
+    #####:   81:        schemeListParse(index);
+call    0 never executed
+        -:   82:    }
+        -:   83:    else {
+    #####:   84:        return;
+    %%%%%:   84-block  0
+        -:   85:    }
+        -:   86:}
+        -:   87:
+function _ZN6Parser13factListParseERi called 0 returned 0% blocks executed 0%
+    #####:   88:void Parser::factListParse(int &index) {
+        -:   89:
+    #####:   90:    if (match(index,TokenType::ID)) {
+    %%%%%:   90-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   91:        factParse(index);
+    %%%%%:   91-block  0
+call    0 never executed
+    #####:   92:        factListParse(index);
+call    0 never executed
+        -:   93:    }
+        -:   94:    else {
+    #####:   95:        return;
+    %%%%%:   95-block  0
+        -:   96:    }
+        -:   97:}
+        -:   98:
+function _ZN6Parser13ruleListParseERi called 0 returned 0% blocks executed 0%
+    #####:   99:void Parser::ruleListParse (int &index) {
+        -:  100:
+    #####:  101:    if(match(index,TokenType::ID)) {
+    %%%%%:  101-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  102:        ruleParse(index);
+    %%%%%:  102-block  0
+call    0 never executed
+    #####:  103:        ruleListParse(index);
+call    0 never executed
+        -:  104:    }
+    #####:  105:    else return;
+    %%%%%:  105-block  0
+        -:  106:}
+        -:  107:
+function _ZN6Parser14queryListParseERi called 0 returned 0% blocks executed 0%
+    #####:  108:void Parser::queryListParse (int &index) {
+        -:  109:
+    #####:  110:    if (match(index,TokenType::ID)) {
+    %%%%%:  110-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  111:        queryParse(index);
+    %%%%%:  111-block  0
+call    0 never executed
+    #####:  112:        queryListParse(index);
+call    0 never executed
+        -:  113:    }
+    #####:  114:    else return;
+    %%%%%:  114-block  0
+        -:  115:}
+        -:  116:
+        -:  117:
+function _ZN6Parser11schemeParseERi called 1 returned 0% blocks executed 11%
+        1:  118:void Parser::schemeParse (int &index) {
+        -:  119:
+        1:  120:    if(match(index,TokenType::ID)) {
+        1:  120-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    #####:  121:        Predicate tempScheme(tokens.at(index)->getDescription());
+    %%%%%:  121-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  121-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  121-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  121-block  3
+call    9 never executed
+    $$$$$:  121-block  4
+    $$$$$:  121-block  5
+call   10 never executed
+    #####:  122:        index++;
+    #####:  123:        if (match(index,TokenType::LEFT_PAREN)) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  123-block  0
+branch  3 never executed
+branch  4 never executed
+    #####:  124:            index++;
+    #####:  125:            if (match(index,TokenType::ID)){
+    %%%%%:  125-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  125-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  126:                tempScheme.setID(tokens.at(index)->getDescription());
+    %%%%%:  126-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  126-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  126-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  126-block  3
+call    9 never executed
+    $$$$$:  126-block  4
+call   10 never executed
+    $$$$$:  126-block  5
+    #####:  127:                index++;
+    #####:  128:                idListParse(index, tempScheme);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  129:                if(match(index,TokenType::RIGHT_PAREN)){
+    %%%%%:  129-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  129-block  1
+branch  3 never executed
+branch  4 never executed
+        -:  130:
+    #####:  131:                    datalog.setScheme(tempScheme);
+    %%%%%:  131-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  131-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  131-block  2
+call    6 never executed
+    $$$$$:  131-block  3
+call    7 never executed
+    $$$$$:  131-block  4
+    #####:  132:                    index++;
+        -:  133:            }
+    #####:  134:            else throw index;
+    %%%%%:  134-block  0
+call    0 never executed
+call    1 never executed
+        -:  135:
+        -:  136:        }
+    #####:  137:        else throw index;
+    %%%%%:  137-block  0
+call    0 never executed
+call    1 never executed
+        -:  138:
+        -:  139:    }
+    #####:  140:    else throw index;
+    %%%%%:  140-block  0
+call    0 never executed
+call    1 never executed
+        -:  141:}
+        1:  142:else throw index;
+        1:  142-block  0
+call    0 returned 1
+call    1 returned 0
+    #####:  143:}
+    %%%%%:  143-block  0
+        -:  144:
+function _ZN6Parser9factParseERi called 0 returned 0% blocks executed 0%
+    #####:  145:void Parser::factParse (int &index) {
+    #####:  146:    if (match(index,TokenType::ID)) {
+    %%%%%:  146-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  147:        Predicate tempFact(tokens.at(index)->getDescription());
+    %%%%%:  147-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  147-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  147-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  147-block  3
+call    9 never executed
+    $$$$$:  147-block  4
+    $$$$$:  147-block  5
+call   10 never executed
+    #####:  148:        index ++;
+    #####:  149:        if(match(index,TokenType::LEFT_PAREN)){
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  149-block  0
+branch  3 never executed
+branch  4 never executed
+    #####:  150:            index ++;
+    #####:  151:            if(match(index,TokenType::STRING)) {
+    %%%%%:  151-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  151-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  152:                tempFact.setString(tokens.at(index)->getDescription()); // string datalog에 집어넣자 우리 (string list 참조)
+    %%%%%:  152-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  152-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  152-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  152-block  3
+call    9 never executed
+    $$$$$:  152-block  4
+call   10 never executed
+    $$$$$:  152-block  5
+    #####:  153:                index++;
+    #####:  154:                stringListParse(index, tempFact);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  155:                if(match(index,TokenType::RIGHT_PAREN)){
+    %%%%%:  155-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  155-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  156:                    index++;
+    #####:  157:                    if (match(index,TokenType::PERIOD)) {
+    %%%%%:  157-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  157-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  158:                        datalog.setFact(tempFact);
+    %%%%%:  158-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  158-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  158-block  2
+call    6 never executed
+    $$$$$:  158-block  3
+call    7 never executed
+    $$$$$:  158-block  4
+    #####:  159:                        index++;
+        -:  160:                    }
+    #####:  161:                    else throw index;
+    %%%%%:  161-block  0
+call    0 never executed
+call    1 never executed
+        -:  162:
+        -:  163:                }
+    #####:  164:                else throw index;
+    %%%%%:  164-block  0
+call    0 never executed
+call    1 never executed
+        -:  165:            }
+    #####:  166:            else throw index;
+    %%%%%:  166-block  0
+call    0 never executed
+call    1 never executed
+        -:  167:        }
+    #####:  168:        else throw index;
+    %%%%%:  168-block  0
+call    0 never executed
+call    1 never executed
+        -:  169:    }
+    #####:  170:    else throw index;
+    %%%%%:  170-block  0
+call    0 never executed
+call    1 never executed
+    #####:  171:}
+    %%%%%:  171-block  0
+        -:  172:
+function _ZN6Parser9ruleParseERi called 0 returned 0% blocks executed 0%
+    #####:  173:void Parser::ruleParse (int &index) {
+    #####:  174:    Predicate tempPredicate;
+    %%%%%:  174-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:  174-block  1
+call    2 never executed
+    #####:  175:    headPredicateParse(index, tempPredicate);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  176:
+    #####:  177:    Rule tempRule(tempPredicate);
+    %%%%%:  177-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  177-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  177-block  2
+call    6 never executed
+    $$$$$:  177-block  3
+    $$$$$:  177-block  4
+call    7 never executed
+        -:  178:
+    #####:  179:    if(match(index,TokenType::COLON_DASH)){
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  179-block  0
+branch  3 never executed
+branch  4 never executed
+    #####:  180:        index++;
+    #####:  181:        predicateParse(index,tempRule);
+    %%%%%:  181-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  182:        predicateListParse(index, tempRule);
+    %%%%%:  182-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  183:        if(match(index,TokenType::PERIOD)){
+    %%%%%:  183-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  183-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  184:            datalog.setRule(tempRule);
+    %%%%%:  184-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  184-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  184-block  2
+call    6 never executed
+    $$$$$:  184-block  3
+call    7 never executed
+    $$$$$:  184-block  4
+    #####:  185:            index++;
+        -:  186:        }
+    #####:  187:        else throw index;
+    %%%%%:  187-block  0
+call    0 never executed
+call    1 never executed
+        -:  188:    }
+    #####:  189:    else throw index;
+    %%%%%:  189-block  0
+call    0 never executed
+call    1 never executed
+    #####:  190:}
+        -:  191:
+function _ZN6Parser10queryParseERi called 0 returned 0% blocks executed 0%
+    #####:  192:void Parser::queryParse (int &index) {
+    #####:  193:    Predicate tempPredicate;
+    %%%%%:  193-block  0
+call    0 never executed
+    %%%%%:  193-block  1
+call    1 never executed
+    $$$$$:  193-block  2
+call    2 never executed
+    #####:  194:    predicateParse(index, tempPredicate);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  195:
+    #####:  196:    if (match(index,TokenType::Q_MARK)){
+    %%%%%:  196-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  196-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  197:        index++;
+        -:  198:
+    #####:  199:        datalog.setQuery(tempPredicate);
+    %%%%%:  199-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  199-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  199-block  2
+call    6 never executed
+    $$$$$:  199-block  3
+call    7 never executed
+    $$$$$:  199-block  4
+        -:  200:    }
+    #####:  201:    else throw index;
+    %%%%%:  201-block  0
+call    0 never executed
+call    1 never executed
+    #####:  202:}
+        -:  203:
+        -:  204:
+function _ZN6Parser18headPredicateParseERiR9Predicate called 0 returned 0% blocks executed 0%
+    #####:  205:void Parser::headPredicateParse (int &index, Predicate &tempPredicate) {
+        -:  206:
+    #####:  207:    if (match(index,TokenType::ID)) {
+    %%%%%:  207-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  208:        tempPredicate.setMainID(tokens.at(index)->getDescription());
+    %%%%%:  208-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  208-block  1
+call    5 never executed
+    $$$$$:  208-block  2
+call    6 never executed
+    $$$$$:  208-block  3
+call    7 never executed
+    #####:  209:        index++;
+    #####:  210:        if (match(index,TokenType::LEFT_PAREN)){
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  211:            index++;
+    #####:  212:            if(match(index,TokenType::ID)){
+    %%%%%:  212-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  213:                tempPredicate.setID(tokens.at(index)->getDescription());
+    %%%%%:  213-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  213-block  1
+call    5 never executed
+    $$$$$:  213-block  2
+call    6 never executed
+    #####:  214:                index++;
+    #####:  215:                idListParse(index, tempPredicate);
+call    0 never executed
+    #####:  216:                if(match(index,TokenType::RIGHT_PAREN)) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  217:                    index++;
+    %%%%%:  217-block  0
+        -:  218:                }
+    #####:  219:                else throw index;
+    %%%%%:  219-block  0
+call    0 never executed
+call    1 never executed
+        -:  220:            }
+    #####:  221:            else throw index;
+    %%%%%:  221-block  0
+call    0 never executed
+call    1 never executed
+        -:  222:        }
+    #####:  223:        else throw index;
+    %%%%%:  223-block  0
+call    0 never executed
+call    1 never executed
+        -:  224:    }
+    #####:  225:    else throw index;
+    %%%%%:  225-block  0
+call    0 never executed
+call    1 never executed
+    #####:  226:}
+    %%%%%:  226-block  0
+        -:  227:
+function _ZN6Parser14predicateParseERiR4Rule called 0 returned 0% blocks executed 0%
+    #####:  228:void Parser::predicateParse (int &index, Rule &tempRule) {
+    #####:  229:    Predicate tempPredicate;
+    %%%%%:  229-block  0
+call    0 never executed
+    %%%%%:  229-block  1
+call    1 never executed
+    $$$$$:  229-block  2
+call    2 never executed
+        -:  230:
+    #####:  231:    if (match(index,TokenType::ID)) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  231-block  0
+branch  3 never executed
+branch  4 never executed
+    #####:  232:        tempPredicate.setMainID(tokens.at(index)->getDescription());
+    %%%%%:  232-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  232-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  232-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  232-block  3
+call    9 never executed
+    $$$$$:  232-block  4
+call   10 never executed
+    $$$$$:  232-block  5
+    #####:  233:        index++;
+    #####:  234:        if (match(index,TokenType::LEFT_PAREN)) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  234-block  0
+branch  3 never executed
+branch  4 never executed
+    #####:  235:            index++;
+    #####:  236:            parameterParse(index, tempPredicate);
+    %%%%%:  236-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  237:            parameterListParse(index, tempPredicate);
+    %%%%%:  237-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  238:            if(match(index,TokenType::RIGHT_PAREN)) {
+    %%%%%:  238-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  238-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  239:                tempRule.setPredicateList(tempPredicate);
+    %%%%%:  239-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  239-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  239-block  2
+call    6 never executed
+    $$$$$:  239-block  3
+call    7 never executed
+    $$$$$:  239-block  4
+    #####:  240:                index++;
+        -:  241:            }
+    #####:  242:            else throw index;
+    %%%%%:  242-block  0
+call    0 never executed
+call    1 never executed
+        -:  243:        }
+    #####:  244:        else throw index;
+    %%%%%:  244-block  0
+call    0 never executed
+call    1 never executed
+        -:  245:    }
+    #####:  246:    else throw index;
+    %%%%%:  246-block  0
+call    0 never executed
+call    1 never executed
+    #####:  247:}
+        -:  248:
+function _ZN6Parser14predicateParseERiR9Predicate called 0 returned 0% blocks executed 0%
+    #####:  249:void Parser::predicateParse (int &index, Predicate &tempPredicate) {
+    #####:  250:    if (match(index,TokenType::ID)) {
+    %%%%%:  250-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  251:        tempPredicate.setMainID(tokens.at(index)->getDescription());
+    %%%%%:  251-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  251-block  1
+call    5 never executed
+    $$$$$:  251-block  2
+call    6 never executed
+    #####:  252:        index++;
+    #####:  253:        if (match(index,TokenType::LEFT_PAREN)) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  254:            index++;
+    #####:  255:            parameterParse(index, tempPredicate);
+    %%%%%:  255-block  0
+call    0 never executed
+    #####:  256:            parameterListParse(index, tempPredicate);
+call    0 never executed
+    #####:  257:            if(match(index,TokenType::RIGHT_PAREN)) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  258:                index++;
+    %%%%%:  258-block  0
+        -:  259:            }
+    #####:  260:            else throw index;
+    %%%%%:  260-block  0
+call    0 never executed
+call    1 never executed
+        -:  261:        }
+    #####:  262:        else throw index;
+    %%%%%:  262-block  0
+call    0 never executed
+call    1 never executed
+        -:  263:    }
+    #####:  264:    else throw index;
+    %%%%%:  264-block  0
+call    0 never executed
+call    1 never executed
+    #####:  265:}
+    %%%%%:  265-block  0
+        -:  266:
+function _ZN6Parser18predicateListParseERiR4Rule called 0 returned 0% blocks executed 0%
+    #####:  267:void Parser::predicateListParse (int &index, Rule &tempRule) {
+        -:  268:
+    #####:  269:    if (match(index,TokenType::COMMA)) {
+    %%%%%:  269-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  270:        index++;
+    #####:  271:        predicateParse(index, tempRule);
+    %%%%%:  271-block  0
+call    0 never executed
+    #####:  272:        predicateListParse(index, tempRule);
+call    0 never executed
+        -:  273:    }
+    #####:  274:    else return;
+    %%%%%:  274-block  0
+        -:  275:}
+        -:  276:
+function _ZN6Parser18parameterListParseERiR9Predicate called 0 returned 0% blocks executed 0%
+    #####:  277:void Parser::parameterListParse (int &index, Predicate &tempPredicate) {
+        -:  278:
+    #####:  279:    if(match(index,TokenType::COMMA)) {
+    %%%%%:  279-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  280:        index ++;
+    #####:  281:        parameterParse(index, tempPredicate);
+    %%%%%:  281-block  0
+call    0 never executed
+    #####:  282:        parameterListParse(index, tempPredicate);
+call    0 never executed
+        -:  283:    }
+    #####:  284:    else return;
+    %%%%%:  284-block  0
+        -:  285:}
+        -:  286:
+function _ZN6Parser15stringListParseERiR9Predicate called 0 returned 0% blocks executed 0%
+    #####:  287:void Parser::stringListParse (int &index, Predicate &tempFact) {
+    #####:  288:    if(match(index,TokenType::COMMA)) {
+    %%%%%:  288-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  289:        index++;
+    #####:  290:        if (match(index,TokenType::STRING)){
+    %%%%%:  290-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  291:            tempFact.setString(tokens.at(index)->getDescription());
+    %%%%%:  291-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  291-block  1
+call    5 never executed
+    $$$$$:  291-block  2
+call    6 never executed
+    #####:  292:            index ++;
+    #####:  293:            stringListParse(index, tempFact);
+call    0 never executed
+        -:  294:        }
+    #####:  295:        else throw index;
+    %%%%%:  295-block  0
+call    0 never executed
+call    1 never executed
+        -:  296:    }
+        -:  297:    else {
+    #####:  298:        return;
+    %%%%%:  298-block  0
+        -:  299:    }
+        -:  300:}
+        -:  301:
+function _ZN6Parser11idListParseERiR9Predicate called 0 returned 0% blocks executed 0%
+    #####:  302:void Parser::idListParse (int &index, Predicate &tempPredicate) {
+        -:  303:
+    #####:  304:    if (match(index,TokenType::COMMA)){
+    %%%%%:  304-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  305:        index++;
+    #####:  306:        if(match(index,TokenType::ID)) {
+    %%%%%:  306-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  307:            tempPredicate.setID(tokens.at(index)->getDescription());
+    %%%%%:  307-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  307-block  1
+call    5 never executed
+    $$$$$:  307-block  2
+call    6 never executed
+    #####:  308:            index++;
+    #####:  309:            idListParse(index, tempPredicate);
+call    0 never executed
+        -:  310:        }
+    #####:  311:        else throw index;
+    %%%%%:  311-block  0
+call    0 never executed
+call    1 never executed
+        -:  312:    }
+        -:  313:    else {
+    #####:  314:        return;
+    %%%%%:  314-block  0
+        -:  315:    }
+        -:  316:}
+        -:  317:
+function _ZN6Parser14parameterParseERiR9Predicate called 0 returned 0% blocks executed 0%
+    #####:  318:void Parser::parameterParse (int &index, Predicate &tempPredicate) {
+    #####:  319:    if(match(index,TokenType::STRING)){
+    %%%%%:  319-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  320:
+    #####:  321:        tempPredicate.setString(tokens.at(index)->getDescription());
+    %%%%%:  321-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  321-block  1
+call    5 never executed
+    $$$$$:  321-block  2
+call    6 never executed
+    $$$$$:  321-block  3
+call    7 never executed
+    #####:  322:        index++;
+        -:  323:    }
+    #####:  324:    else if (match(index,TokenType::ID)){
+    %%%%%:  324-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  325:
+    #####:  326:        tempPredicate.setID(tokens.at(index)->getDescription());
+    %%%%%:  326-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  326-block  1
+call    5 never executed
+    $$$$$:  326-block  2
+call    6 never executed
+    #####:  327:        index++;
+        -:  328:    }
+    #####:  329:    else throw index;
+    %%%%%:  329-block  0
+call    0 never executed
+call    1 never executed
+    #####:  330:}
+    %%%%%:  330-block  0
+        -:  331:
+function _ZN6Parser5matchERi9TokenType called 3 returned 100% blocks executed 100%
+        5:  332:bool Parser::match(int &index, TokenType tempToken) {
+        5:  333:    while (tokens.at(index)->getTokenType()  ==  TokenType::COMMENT ) {
+        5:  333-block  0
+call    0 returned 5
+call    1 returned 5
+branch  2 taken 2 (fallthrough)
+branch  3 taken 3
+        2:  334:        index++;
+        2:  334-block  0
+        -:  335:    }
+        3:  336:    if (tokens.at(index)->getTokenType() == tempToken) {
+        3:  336-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 2 (fallthrough)
+branch  3 taken 1
+        2:  337:        return true;
+        2:  337-block  0
+        -:  338:    }
+        -:  339:    else {
+        1:  340:        return false;
+        1:  340-block  0
+        -:  341:    }
+        -:  342:}

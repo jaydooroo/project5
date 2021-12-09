@@ -1,0 +1,39 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/IDAutomaton.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/IDAutomaton.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/IDAutomaton.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-15.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_IDAUTOMATON_H
+        -:    6:#define PROJECT1_STARTER_CODE_IDAUTOMATON_H
+        -:    7:
+        -:    8:#include "Automaton.h"
+        -:    9:
+        -:   10:class IDAutomaton : public Automaton {
+        -:   11:private:
+        -:   12:    void S1 (const std::string& input);
+        -:   13:
+        -:   14:public:
+        -:   15:    IDAutomaton() : Automaton(TokenType::ID) {}
+        2:   16:   ~ IDAutomaton() {}
+------------------
+_ZN11IDAutomatonD0Ev:
+function _ZN11IDAutomatonD0Ev called 1 returned 100% blocks executed 100%
+        1:   16:   ~ IDAutomaton() {}
+        1:   16-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN11IDAutomatonD2Ev:
+function _ZN11IDAutomatonD2Ev called 1 returned 100% blocks executed 100%
+        1:   16:   ~ IDAutomaton() {}
+        1:   16-block  0
+call    0 returned 1
+------------------
+        -:   17:    void S0 (const std::string& input);
+        -:   18:};
+        -:   19:
+        -:   20:
+        -:   21:#endif //PROJECT1_STARTER_CODE_IDAUTOMATON_H

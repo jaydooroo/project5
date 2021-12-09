@@ -1,0 +1,1356 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Interpreter.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Interpreter.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Interpreter.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-10-27.
+        -:    3://
+        -:    4:
+        -:    5:#include "Interpreter.h"
+        -:    6:
+function _ZN11Interpreter13makesDatabaseEv called 1 returned 100% blocks executed 6%
+        1:    7:void Interpreter::makesDatabase() {  //일일이 튜플과 헤더 만들어서 relation 만들고 database 만들어야함
+       1*:    8:    for(unsigned int i = 0; i < datalog.getSchemes().size(); i++){
+        1:    8-block  0
+        1:    8-block  1
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+        -:    9:
+    #####:   10:        Header tempHeader;
+    %%%%%:   10-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:   10-block  1
+call    2 never executed
+    #####:   11:        for(unsigned int j = 0; j < datalog.getSchemes().at(i).returnParameter().size(); j++){   // 헤더에 attribute저장
+    %%%%%:   11-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   11-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    #####:   12:            tempHeader.SetHeader(datalog.getSchemes().at(i).returnParameter().at(j).toString());
+    %%%%%:   12-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   12-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   12-block  2
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:   12-block  3
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   12-block  4
+call   14 never executed
+    $$$$$:   12-block  5
+call   15 never executed
+    $$$$$:   12-block  6
+        -:   13:        }
+    #####:   14:        Relation tempRelation ( datalog.getSchemes().at(i).returnID(), tempHeader);  // relation creation
+    %%%%%:   14-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   14-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   14-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   14-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+    $$$$$:   14-block  4
+    $$$$$:   14-block  5
+    $$$$$:   14-block  6
+call   14 never executed
+        -:   15:
+    #####:   16:        for(unsigned int j = 0; j < datalog.getFacts().size(); j++) {  // tuple에서 중복이 있으면 어떡하나?
+    %%%%%:   16-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   16-block  1
+    #####:   17:            if(datalog.getFacts().at(j).returnID() == datalog.getSchemes().at(i).returnID()) {   // ID가 같은 tuple 있을시
+    %%%%%:   17-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   17-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   17-block  2
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:   17-block  3
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   17-block  4
+call   14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    $$$$$:   17-block  5
+call   19 never executed
+    $$$$$:   17-block  6
+    #####:   18:                Tuple tempTuple;
+    %%%%%:   18-block  0
+call    0 never executed
+    $$$$$:   18-block  1
+call    1 never executed
+    #####:   19:                for (unsigned int h = 0; h < datalog.getFacts().at(j).returnParameter().size(); h++){
+    %%%%%:   19-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   19-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    #####:   20:                    tempTuple.SetTuple(datalog.getFacts().at(j).returnParameter().at(h).toString()); // 하나의 튜플에 값들 저장
+    %%%%%:   20-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   20-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   20-block  2
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:   20-block  3
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   20-block  4
+call   14 never executed
+    $$$$$:   20-block  5
+call   15 never executed
+    $$$$$:   20-block  6
+        -:   21:                }
+    #####:   22:                tempRelation.addTuple(tempTuple);  // relation에 튜플 추가
+    %%%%%:   22-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   22-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   22-block  2
+call    6 never executed
+call    7 never executed
+    $$$$$:   22-block  3
+call    8 never executed
+    $$$$$:   22-block  4
+        -:   23:            }
+        -:   24:        }
+        -:   25:
+    #####:   26:        database.insertRelation(datalog.getSchemes().at(i).returnID(),tempRelation); //database 에 추가
+    %%%%%:   26-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   26-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   26-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   26-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   26-block  4
+call   13 never executed
+call   14 never executed
+call   15 never executed
+    $$$$$:   26-block  5
+call   16 never executed
+    $$$$$:   26-block  6
+    $$$$$:   26-block  7
+call   17 never executed
+    $$$$$:   26-block  8
+        -:   27:    }
+        1:   28:}
+        1:   28-block  0
+        -:   29:
+function _ZN11Interpreter15initiateQueriesB5cxx11Ev called 1 returned 100% blocks executed 22%
+        1:   30:std::string Interpreter::initiateQueries () {
+        2:   31:    std::ostringstream oss;
+        1:   31-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   31-block  1
+call    3 returned 1
+    $$$$$:   31-block  2
+call    4 never executed
+       1*:   32:    for (unsigned int i = 0; i < datalog.getQueries().size(); i++) {
+        1:   32-block  0
+        1:   32-block  1
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    #####:   33:        Relation tempRelation = applyQuery(datalog.getQueries().at(i));
+    %%%%%:   33-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   33-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   33-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   33-block  3
+    $$$$$:   33-block  4
+call   10 never executed
+        -:   34:
+    #####:   35:        oss << datalog.getQueries().at(i).toString() << "? ";
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   35-block  0
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   35-block  1
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   35-block  2
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   35-block  3
+call   13 never executed
+    $$$$$:   35-block  4
+call   14 never executed
+    $$$$$:   35-block  5
+        -:   36:        //oss << datalog.getQueries().at(i).returnID() << "("
+        -:   37:        // <<database.getRelation(datalog.getQueries().at(i).returnID()).getHeader().toString() << ")? ";
+    #####:   38:        if (tempRelation.tupleSize() == 0) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   39:            oss << "No" << std::endl;
+    %%%%%:   39-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   39-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        -:   40:        }
+        -:   41:        else {
+    #####:   42:            oss << "Yes(" << tempRelation.tupleSize() << ")" << std::endl;
+    %%%%%:   42-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   42-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   42-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   42-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+        -:   43:        }
+        -:   44:
+    #####:   45:        oss << tempRelation.toString();
+    %%%%%:   45-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   45-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   45-block  2
+call    6 never executed
+call    7 never executed
+    $$$$$:   45-block  3
+call    8 never executed
+    $$$$$:   45-block  4
+        -:   46:    }
+        2:   47:    return oss.str();
+        1:   47-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   47-block  1
+        -:   48:}
+        -:   49:
+function _ZN11Interpreter10applyQueryE9Predicate called 0 returned 0% blocks executed 0%
+    #####:   50:Relation Interpreter::applyQuery (Predicate query) {   // 한개의 query 만적용
+        -:   51:
+    #####:   52:    Relation tempRelation = database.getRelation(query.returnID());
+    %%%%%:   52-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   52-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   52-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:   52-block  3
+    #####:   53:    std::vector <std::string> attributes;
+call    0 never executed
+call    1 never executed
+    $$$$$:   53-block  0
+call    2 never executed
+    #####:   54:    std::vector <unsigned int> indices;
+call    0 never executed
+    %%%%%:   54-block  0
+call    1 never executed
+    $$$$$:   54-block  1
+call    2 never executed
+        -:   55:
+    #####:   56:    for (unsigned int i = 0; i < query.returnParameter().size(); i++) {
+    %%%%%:   56-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   56-block  1
+    #####:   57:        if (query.returnParameter().at(i).getChoice() == "STRING"){
+    %%%%%:   57-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   57-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   57-block  2
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    #####:   58:            tempRelation = tempRelation.selectValue(i,query.returnParameter().at(i).toString()); // string 값과 같은것을 골라내는 작업
+    %%%%%:   58-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   58-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   58-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   58-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   58-block  4
+call   13 never executed
+call   14 never executed
+    $$$$$:   58-block  5
+call   15 never executed
+    $$$$$:   58-block  6
+    $$$$$:   58-block  7
+call   16 never executed
+    $$$$$:   58-block  8
+        -:   59:
+        -:   60:        } else {
+        -:   61:            try {
+    #####:   62:                for (unsigned int j = 0; j < i; j++) {   // if there is at least one same attributes
+    %%%%%:   62-block  0
+    %%%%%:   62-block  1
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   62-block  2
+    #####:   63:                    if (query.returnParameter().at(j).toString() == query.returnParameter().at(i).toString()) {
+    %%%%%:   63-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   63-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   63-block  2
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:   63-block  3
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   63-block  4
+call   14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    $$$$$:   63-block  5
+call   19 never executed
+    $$$$$:   63-block  6
+    #####:   64:                        throw j;
+    %%%%%:   64-block  0
+call    0 never executed
+call    1 never executed
+        -:   65:                    }
+        -:   66:                }
+    #####:   67:                attributes.push_back(query.returnParameter().at(i).toString());  // save for the later project and rename
+    %%%%%:   67-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   67-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   67-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   67-block  3
+call   10 never executed
+    $$$$$:   67-block  4
+call   11 never executed
+    $$$$$:   67-block  5
+    #####:   68:                indices.push_back(i);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   69:            }
+    =====:   70:            catch(unsigned int j) {
+    $$$$$:   70-block  0
+call    0 never executed
+    $$$$$:   70-block  1
+call    1 never executed
+    =====:   71:                tempRelation = tempRelation.select(j,i); // ??
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   71-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   71-block  1
+call    6 never executed
+call    7 never executed
+    $$$$$:   71-block  2
+call    8 never executed
+    $$$$$:   71-block  3
+        -:   72:            }
+        -:   73:            //adds
+        -:   74:        }
+        -:   75:    }
+    #####:   76:    tempRelation = tempRelation.project(indices);
+    %%%%%:   76-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   76-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   76-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   76-block  3
+call    9 never executed
+call   10 never executed
+    $$$$$:   76-block  4
+call   11 never executed
+    $$$$$:   76-block  5
+    $$$$$:   76-block  6
+call   12 never executed
+    $$$$$:   76-block  7
+    #####:   77:    tempRelation = tempRelation.rename(attributes);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   77-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   77-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   77-block  2
+call    9 never executed
+call   10 never executed
+    $$$$$:   77-block  3
+call   11 never executed
+    $$$$$:   77-block  4
+    $$$$$:   77-block  5
+call   12 never executed
+    $$$$$:   77-block  6
+        -:   78:
+    #####:   79:    return tempRelation;
+    %%%%%:   79-block  0
+        -:   80:}
+        -:   81:
+function _ZN11Interpreter13initiateRulesB5cxx11Ev called 1 returned 100% blocks executed 8%
+        1:   82:std::string Interpreter::initiateRules () {
+        2:   83:    std::ostringstream oss;
+        1:   83-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   83-block  1
+call    3 returned 1
+    $$$$$:   83-block  2
+call    4 never executed
+        -:   84:    unsigned int databaseTupleSize;
+        1:   85:    unsigned int countLoop = 0;
+        -:   86:
+        1:   87:    oss << "Rule Evaluation" << std::endl;
+        1:   87-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   87-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        -:   88:
+    #####:   89:do {
+    %%%%%:   89-block  0
+        1:   90:     databaseTupleSize = database.databaseTuplesSize();
+        1:   90-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   91:    for (unsigned int i = 0; i < datalog.getRules().size(); i++) { // go over every rules in the data base
+        1:   91-block  0
+        1:   91-block  1
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+        -:   92:
+    #####:   93:        oss << this->datalog.getRules().at(i).toString() << std::endl;
+    %%%%%:   93-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   93-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   93-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   93-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   93-block  4
+call   13 never executed
+    $$$$$:   93-block  5
+call   14 never executed
+    $$$$$:   93-block  6
+        -:   94:
+    #####:   95:        Relation result;  // Relation which will be updated as it is used to apply relation rule and join.
+call    0 never executed
+call    1 never executed
+    $$$$$:   95-block  0
+call    2 never executed
+        -:   96:
+    #####:   97:        for (unsigned int j = 0;
+    #####:   98:             j < datalog.getRules().at(i).getPredicateList().size(); j++) {  //go over every predicate list in a rule
+    %%%%%:   98-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   98-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+        -:   99:            // get a relation by applying a predicate from a rule into the database
+    #####:  100:            Relation tempRelation = applyRule(datalog.getRules().at(i).getPredicateList().at(j)); // 나중에 포인터 쓸수 있음 쓰기
+    %%%%%:  100-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  100-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  100-block  2
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:  100-block  3
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:  100-block  4
+call   14 never executed
+    $$$$$:  100-block  5
+    $$$$$:  100-block  6
+call   15 never executed
+        -:  101:
+    #####:  102:            if (j == 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  103:                result = tempRelation;
+    %%%%%:  103-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  104:            } else {
+    #####:  105:                result = result.naturalJoin(tempRelation); // result 안에 stringID(즉 relation 이름이 없음)없음
+    %%%%%:  105-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  105-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  105-block  2
+call    6 never executed
+    $$$$$:  105-block  3
+call    7 never executed
+    $$$$$:  105-block  4
+        -:  106:            }
+        -:  107:
+        -:  108:        }
+        -:  109:        // 헤드 predicate에 있는 ID 값 넣어드림, 즉 relation 이름 넣음
+    #####:  110:        result.setName(datalog.getRules().at(i).getPredicate().returnID());
+    %%%%%:  110-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  110-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  110-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  110-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  110-block  4
+call   13 never executed
+call   14 never executed
+    $$$$$:  110-block  5
+call   15 never executed
+    $$$$$:  110-block  6
+    $$$$$:  110-block  7
+call   16 never executed
+    $$$$$:  110-block  8
+        -:  111:        // 헤드 predicate에 있는대로 Project해서 넣어야함.
+        -:  112:
+    #####:  113:        std::vector<unsigned int> indices;
+call    0 never executed
+call    1 never executed
+    $$$$$:  113-block  0
+call    2 never executed
+        -:  114:
+        -:  115:        // result attributes중에 헤드 predicate attributes와 일치하는 것들이 어디있는 지 찾은다음 그 번호를 vector에 저장
+    #####:  116:        for (unsigned int j = 0; j < datalog.getRules().at(i).getPredicate().returnParameter().size(); j++) {
+    %%%%%:  116-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  116-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  116-block  2
+call    7 never executed
+call    8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  116-block  3
+        -:  117:
+    #####:  118:            for (unsigned int h = 0; h < result.getHeader().headerSize(); h++) {
+    %%%%%:  118-block  0
+    %%%%%:  118-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  118-block  2
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  118-block  3
+    #####:  119:                if (datalog.getRules().at(i).getPredicate().returnParameter().at(j).toString() ==
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  119-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  119-block  1
+call    6 never executed
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  119-block  2
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  119-block  3
+call   13 never executed
+call   14 never executed
+call   15 never executed
+    $$$$$:  119-block  4
+call   16 never executed
+    $$$$$:  119-block  5
+    #####:  120:                    result.getHeader().GetHeader().at(h)) {
+    %%%%%:  120-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  120-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  120-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  120-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    $$$$$:  120-block  4
+call   13 never executed
+    $$$$$:  120-block  5
+    #####:  121:                    indices.push_back(h); //여기서 어떻게 새로운 relation 순서 상관할 필요없음, project에서 알아서 해줌
+    %%%%%:  121-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  122:                }
+        -:  123:            }
+        -:  124:        }
+        -:  125:        // result에서 필요한 부분만 project
+    #####:  126:         result = result.project(indices);
+    %%%%%:  126-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  126-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  126-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  126-block  3
+call    9 never executed
+call   10 never executed
+    $$$$$:  126-block  4
+call   11 never executed
+    $$$$$:  126-block  5
+    $$$$$:  126-block  6
+call   12 never executed
+    $$$$$:  126-block  7
+        -:  127:
+    #####:  128:        for (unsigned int x = 0; x < datalog.getSchemes().size() ;x++) {
+    %%%%%:  128-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  128-block  1
+    #####:  129:            if(datalog.getSchemes().at(x).returnID() == datalog.getRules().at(i).getPredicate().returnID()){
+    %%%%%:  129-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  129-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  129-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  129-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:  129-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:  129-block  5
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  129-block  6
+call   23 never executed
+    $$$$$:  129-block  7
+    $$$$$:  129-block  8
+call   24 never executed
+    $$$$$:  129-block  9
+    #####:  130:                std::vector<std::string> attributes;   // attribute 이름 똑같이 변경하기
+    %%%%%:  130-block  0
+call    0 never executed
+    $$$$$:  130-block  1
+call    1 never executed
+    #####:  131:                for(unsigned int j = 0; j <datalog.getSchemes().at(x).returnParameter().size(); j++) {
+    %%%%%:  131-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  131-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    #####:  132:                    attributes.push_back(datalog.getSchemes().at(x).returnParameter().at(j).toString());
+    %%%%%:  132-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  132-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  132-block  2
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:  132-block  3
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:  132-block  4
+call   14 never executed
+    $$$$$:  132-block  5
+call   15 never executed
+    $$$$$:  132-block  6
+        -:  133:                }
+    #####:  134:                result = result.rename(attributes);
+    %%%%%:  134-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  134-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  134-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  134-block  3
+call    9 never executed
+call   10 never executed
+call   11 never executed
+    $$$$$:  134-block  4
+call   12 never executed
+    $$$$$:  134-block  5
+    $$$$$:  134-block  6
+call   13 never executed
+    $$$$$:  134-block  7
+        -:  135:            }
+        -:  136:        }
+        -:  137:
+        -:  138:
+        -:  139:
+        -:  140:
+        -:  141:        /*
+        -:  142:        for(unsigned int j = 0; j < result.tupleSize(); j++) {
+        -:  143:            for(unsigned int h = 0; h < database.getRelation(result.getName()).tupleSize(); h++){
+        -:  144:                if(result.getTuples().)
+        -:  145:            }
+        -:  146:        }*/
+    #####:  147:        Relation tempResult(result.getName(),result.getHeader());
+    %%%%%:  147-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  147-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  147-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+    $$$$$:  147-block  3
+    $$$$$:  147-block  4
+    $$$$$:  147-block  5
+call   10 never executed
+    #####:  148:        for(Tuple t: result.getTuples()){
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  148-block  0
+call    3 never executed
+call    4 never executed
+    %%%%%:  148-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  148-block  2
+call    8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  148-block  3
+call   12 never executed
+call   13 never executed
+    %%%%%:  148-block  4
+call   14 never executed
+    $$$$$:  148-block  5
+call   15 never executed
+    $$$$$:  148-block  6
+call   16 never executed
+    #####:  149:            unsigned int count = 0;
+    #####:  150:            for (Tuple x: database.getRelation(result.getName()).getTuples()){
+    %%%%%:  150-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  150-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  150-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  150-block  3
+call    9 never executed
+call   10 never executed
+call   11 never executed
+    %%%%%:  150-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:  150-block  5
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:  150-block  6
+call   19 never executed
+call   20 never executed
+    %%%%%:  150-block  7
+call   21 never executed
+    $$$$$:  150-block  8
+call   22 never executed
+    $$$$$:  150-block  9
+    $$$$$:  150-block 10
+call   23 never executed
+    $$$$$:  150-block 11
+call   24 never executed
+    #####:  151:                if(t == x) {
+    %%%%%:  151-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  151-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  152:                    count ++;
+    %%%%%:  152-block  0
+        -:  153:                }
+        -:  154:            }
+    #####:  155:            if (count == 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  156:                tempResult.addTuple(t);
+    %%%%%:  156-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  156-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  156-block  2
+call    6 never executed
+    $$$$$:  156-block  3
+call    7 never executed
+    $$$$$:  156-block  4
+        -:  157:            }
+        -:  158:        }
+        -:  159:
+        -:  160:
+    #####:  161:        oss << tempResult.toString();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  161-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  161-block  1
+call    6 never executed
+    $$$$$:  161-block  2
+call    7 never executed
+    $$$$$:  161-block  3
+        -:  162:
+        -:  163:        // 지금 있는 데이터베이스에 result값 대입
+    #####:  164:        this->database.getRelation(result.getName()).unionRelations(result);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  164-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  164-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  164-block  2
+call    9 never executed
+call   10 never executed
+    $$$$$:  164-block  3
+call   11 never executed
+    $$$$$:  164-block  4
+        -:  165:
+        -:  166:
+        -:  167:    }
+        1:  168:    countLoop++;
+        1:  169:} while(databaseTupleSize != database.databaseTuplesSize());
+        1:  169-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  169-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+        -:  170:
+        -:  171:
+        1:  172:oss << std::endl << "Schemes populated after " << countLoop << " passes through the Rules." << std::endl << std::endl;
+        1:  172-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  172-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  172-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  172-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  172-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  172-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        -:  173:
+        2:  174:    return oss.str();
+        1:  174-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  174-block  1
+        -:  175:
+        -:  176:}
+        -:  177:
+function _ZN11Interpreter9applyRuleE9Predicate called 0 returned 0% blocks executed 0%
+    #####:  178:Relation Interpreter::applyRule (Predicate ruleToApply) {
+        -:  179:
+    #####:  180:    Relation tempRelation = database.getRelation(ruleToApply.returnID()); // database에서 ID랑 같은 값들의 Tuples 모아서 relation 만들어서 넣기.
+    %%%%%:  180-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  180-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  180-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  180-block  3
+    #####:  181:    std::vector <std::string> attributes;  // attribute의 새이름들
+call    0 never executed
+call    1 never executed
+    $$$$$:  181-block  0
+call    2 never executed
+    #####:  182:    std::vector <unsigned int> indices; //project할 attribute 들
+call    0 never executed
+    %%%%%:  182-block  0
+call    1 never executed
+    $$$$$:  182-block  1
+call    2 never executed
+        -:  183:
+    #####:  184:    for (unsigned int i = 0; i < ruleToApply.returnParameter().size(); i++) {
+    %%%%%:  184-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  184-block  1
+    #####:  185:        if (ruleToApply.returnParameter().at(i).getChoice() == "STRING"){
+    %%%%%:  185-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  185-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  185-block  2
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    #####:  186:            tempRelation = tempRelation.selectValue(i,ruleToApply.returnParameter().at(i).toString()); // string 값과 같은것을 골라내는 작업
+    %%%%%:  186-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  186-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  186-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  186-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  186-block  4
+call   13 never executed
+call   14 never executed
+    $$$$$:  186-block  5
+call   15 never executed
+    $$$$$:  186-block  6
+    $$$$$:  186-block  7
+call   16 never executed
+    $$$$$:  186-block  8
+        -:  187:
+        -:  188:        } else {
+        -:  189:            try {
+    #####:  190:                for (unsigned int j = 0; j < i; j++) {   // if there is at least one same variable
+    %%%%%:  190-block  0
+    %%%%%:  190-block  1
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  190-block  2
+    #####:  191:                    if (ruleToApply.returnParameter().at(j).toString() == ruleToApply.returnParameter().at(i).toString()) {
+    %%%%%:  191-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  191-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  191-block  2
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:  191-block  3
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:  191-block  4
+call   14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    $$$$$:  191-block  5
+call   19 never executed
+    $$$$$:  191-block  6
+    #####:  192:                        throw j;
+    %%%%%:  192-block  0
+call    0 never executed
+call    1 never executed
+        -:  193:                    }
+        -:  194:                }
+    #####:  195:                attributes.push_back(ruleToApply.returnParameter().at(i).toString());  // save for the later project and rename
+    %%%%%:  195-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  195-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  195-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  195-block  3
+call   10 never executed
+    $$$$$:  195-block  4
+call   11 never executed
+    $$$$$:  195-block  5
+    #####:  196:                indices.push_back(i);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  197:            }
+    =====:  198:            catch(unsigned int j) {
+    $$$$$:  198-block  0
+call    0 never executed
+    $$$$$:  198-block  1
+call    1 never executed
+    =====:  199:                tempRelation = tempRelation.select(j,i);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  199-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:  199-block  1
+call    6 never executed
+call    7 never executed
+    $$$$$:  199-block  2
+call    8 never executed
+    $$$$$:  199-block  3
+        -:  200:            }
+        -:  201:            //adds
+        -:  202:        }
+        -:  203:    }
+    #####:  204:    tempRelation = tempRelation.project(indices);
+    %%%%%:  204-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  204-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  204-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  204-block  3
+call    9 never executed
+call   10 never executed
+    $$$$$:  204-block  4
+call   11 never executed
+    $$$$$:  204-block  5
+    $$$$$:  204-block  6
+call   12 never executed
+    $$$$$:  204-block  7
+    #####:  205:    tempRelation = tempRelation.rename(attributes);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  205-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  205-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  205-block  2
+call    9 never executed
+call   10 never executed
+    $$$$$:  205-block  3
+call   11 never executed
+    $$$$$:  205-block  4
+    $$$$$:  205-block  5
+call   12 never executed
+    $$$$$:  205-block  6
+        -:  206:
+    #####:  207:    return tempRelation;
+    %%%%%:  207-block  0
+        -:  208:
+        -:  209:}

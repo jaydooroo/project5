@@ -1,0 +1,89 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Relation.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-10-26.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_RELATION_H
+        -:    6:#define PROJECT1_STARTER_CODE_RELATION_H
+        -:    7:
+        -:    8:#include "Tuple.h"
+        -:    9:#include "Header.h"
+        -:   10:#include <string>
+        -:   11:#include <set>
+        -:   12:#include <sstream>
+        -:   13:
+        -:   14:class Relation {
+        -:   15:
+        -:   16:private:
+        -:   17:    std::string name;
+        -:   18:    Header header;
+        -:   19:    std::set<Tuple> tuples;
+        -:   20:
+        -:   21:public:
+        -:   22:
+        -:   23:    Relation (std::string tempName, Header tempHeader) {
+        -:   24:        name = tempName;
+        -:   25:        header = tempHeader;
+        -:   26:    }
+        -:   27:    Relation(std::string tempName) {
+        -:   28:        name = tempName;
+        -:   29:    }
+        -:   30:
+        -:   31:    Relation() {}
+function _ZN8RelationD2Ev called 0 returned 0% blocks executed 0%
+    #####:   32:    ~Relation() { }
+    %%%%%:   32-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:   33:
+        -:   34:    void setName (std::string tempName) {
+        -:   35:        name = tempName;
+        -:   36:    }
+        -:   37:
+        -:   38:    std::string getName () {
+        -:   39:        return name;
+        -:   40:    }
+        -:   41:
+        -:   42:    void addTuple (Tuple tempTuple);
+        -:   43:
+        -:   44:    Header getHeader () {
+        -:   45:        return header;
+        -:   46:    }
+        -:   47:
+        -:   48:    int tupleSize () {
+        -:   49:        return tuples.size();
+        -:   50:    }
+        -:   51:    std::set<Tuple> getTuples () {
+        -:   52:        return tuples;
+        -:   53:    }
+        -:   54:
+        -:   55:
+        -:   56:
+        -:   57:    Relation selectValue (unsigned int index, std::string value);   // parameters are index and value
+        -:   58:
+        -:   59:    Relation select(unsigned int index1, unsigned int index2);  // parameters are index and index?? 만약 attributes가 같은값이 있는게 있을때 같은 값인 경우에만 relation에추가해서 반환
+        -:   60:
+        -:   61:    Relation project ( std::vector<unsigned int> indices);
+        -:   62:
+        -:   63:    Relation rename (std::vector<std::string> attributes);
+        -:   64:
+        -:   65:    Relation naturalJoin(Relation &tempRelation);
+        -:   66:
+        -:   67:    Header combineHeader(Header tempHeader, std::vector<std::pair<unsigned int, unsigned int >> &tempNumbers);
+        -:   68:
+        -:   69:    bool isJoinable (Tuple &compareTuples1,Tuple &compareTuples2,std:: vector<std::pair<unsigned  int, unsigned  int>> &tempNumbers);
+        -:   70:
+        -:   71:    Tuple combineTuples (Tuple compareTuples1, Tuple compareTuples2, std:: vector<std::pair<unsigned int, unsigned int>> &tempNumbers);
+        -:   72:
+        -:   73:    void unionRelations (Relation &tempRelation);
+        -:   74:
+        -:   75:    std::string toString();
+        -:   76:
+        -:   77:};
+        -:   78:
+        -:   79:
+        -:   80:#endif //PROJECT1_STARTER_CODE_RELATION_H

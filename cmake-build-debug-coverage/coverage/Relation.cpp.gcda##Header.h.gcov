@@ -1,0 +1,48 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Header.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Relation.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Relation.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-10-26.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_HEADER_H
+        -:    6:#define PROJECT1_STARTER_CODE_HEADER_H
+        -:    7:
+        -:    8:#include <vector>
+        -:    9:#include <string>
+        -:   10:#include <sstream>
+        -:   11:
+        -:   12:class Header {
+        -:   13:private:
+        -:   14:    std::vector <std::string> attributes;
+        -:   15:
+        -:   16:public:
+        -:   17:    Header (std::string attribute){
+        -:   18:        attributes.push_back(attribute);
+        -:   19:    }
+function _ZN6HeaderC2Ev called 0 returned 0% blocks executed 0%
+    #####:   20:    Header() {}
+    %%%%%:   20-block  0
+call    0 never executed
+function _ZN6HeaderD2Ev called 0 returned 0% blocks executed 0%
+    #####:   21:    ~ Header (){ }
+    %%%%%:   21-block  0
+call    0 never executed
+        -:   22:
+        -:   23:    void SetHeader (std::string attribute);
+        -:   24:
+        -:   25:    std::vector<std::string> &GetHeader ();
+        -:   26:
+function _ZN6Header10headerSizeEv called 0 returned 0% blocks executed 0%
+    #####:   27:    unsigned int headerSize() {
+    #####:   28:        return attributes.size();
+    %%%%%:   28-block  0
+call    0 never executed
+        -:   29:    }
+        -:   30:
+        -:   31:    std::string toString ();
+        -:   32:};
+        -:   33:
+        -:   34:
+        -:   35:#endif //PROJECT1_STARTER_CODE_HEADER_H

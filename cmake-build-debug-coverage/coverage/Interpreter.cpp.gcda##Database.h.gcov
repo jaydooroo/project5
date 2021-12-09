@@ -1,0 +1,49 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Database.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Interpreter.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Interpreter.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-10-26.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_DATABASE_H
+        -:    6:#define PROJECT1_STARTER_CODE_DATABASE_H
+        -:    7:#include "Relation.h"
+        -:    8:#include <map>
+        -:    9:
+        -:   10:class Database {
+        -:   11:private:
+        -:   12:
+        -:   13:    std::map<std::string,Relation> database;
+        -:   14:
+        -:   15:public:
+        -:   16:    Database (std::string name, Relation relation) {
+        -:   17:        database.insert(std::pair<std::string,Relation>(name,relation));
+        -:   18:    }
+        -:   19:    Database () {}
+        -:   20:    ~Database() {}
+        -:   21:
+function _ZN8Database14insertRelationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE8Relation called 0 returned 0% blocks executed 0%
+    #####:   22:    void insertRelation (std::string name, Relation relation) {
+    #####:   23:        database.insert(std::pair<std::string,Relation>(name,relation));
+    %%%%%:   23-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   23-block  1
+call    4 never executed
+    $$$$$:   23-block  2
+call    5 never executed
+    #####:   24:    }
+        -:   25:
+        -:   26:    unsigned int databaseTuplesSize();
+        -:   27:
+        -:   28:    Relation &getRelation (std:: string name);
+        -:   29:
+        -:   30:    std::string toString ();
+        -:   31:
+        -:   32:};
+        -:   33:
+        -:   34:
+        -:   35:#endif //PROJECT1_STARTER_CODE_DATABASE_H

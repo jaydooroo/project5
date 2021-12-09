@@ -1,0 +1,72 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/DatalogProgram.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-25.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_DATALOGPROGRAM_H
+        -:    6:#define PROJECT1_STARTER_CODE_DATALOGPROGRAM_H
+        -:    7:#include "Predicate.h"
+        -:    8:#include "Parameter.h"
+        -:    9:#include "Rule.h"
+        -:   10:#include <vector>
+        -:   11:#include <set>
+        -:   12:
+        -:   13:class DatalogProgram {
+        -:   14:private:
+        -:   15:    std::vector <Predicate> scheme;
+        -:   16:    std::vector<Predicate> fact;
+        -:   17:    std::vector<Rule> rule;
+        -:   18:    std::vector<Predicate> query;
+        -:   19:    std::set<std::string> domain;
+        -:   20:
+        -:   21:public:
+        -:   22:
+function _ZN14DatalogProgramC2Ev called 2 returned 100% blocks executed 100%
+        2:   23:    DatalogProgram() { }
+        2:   23-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+call    3 returned 2
+call    4 returned 2
+        -:   24:
+        -:   25:   void setScheme (Predicate tempScheme) {
+        -:   26:        scheme.push_back(tempScheme);
+        -:   27:    }
+        -:   28:
+        -:   29:    void setFact (Predicate tempFact) ;
+        -:   30:
+        -:   31:    void setRule (Rule tempRule) {
+        -:   32:        rule.push_back(tempRule);
+        -:   33:    }
+        -:   34:
+        -:   35:    void setQuery (Predicate tempQuery) {
+        -:   36:        query.push_back(tempQuery);
+        -:   37:    }
+        -:   38:
+        -:   39:    std::vector<Predicate> &getSchemes () {
+        -:   40:        return scheme;
+        -:   41:    }
+        -:   42:
+        -:   43:    std::vector<Predicate> &getFacts () {
+        -:   44:        return fact;
+        -:   45:    }
+        -:   46:
+        -:   47:    std::vector<Rule> &getRules () {
+        -:   48:        return rule;
+        -:   49:    }
+        -:   50:
+        -:   51:    std::vector<Predicate> &getQueries () {
+        -:   52:        return query;
+        -:   53:    }
+        -:   54:
+        -:   55:    std::string toString ();
+        -:   56:
+        -:   57:
+        -:   58:};
+        -:   59:
+        -:   60:
+        -:   61:#endif //PROJECT1_STARTER_CODE_DATALOGPROGRAM_H

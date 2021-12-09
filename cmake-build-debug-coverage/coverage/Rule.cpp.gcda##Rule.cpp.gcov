@@ -1,0 +1,100 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Rule.cpp
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Rule.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Rule.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-25.
+        -:    3://
+        -:    4:
+        -:    5:#include "Rule.h"
+        -:    6:
+function _ZN4Rule8toStringB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:    7:std::string Rule::toString () {
+    #####:    8:    std::ostringstream oss;
+    %%%%%:    8-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:    8-block  1
+call    3 never executed
+    $$$$$:    8-block  2
+call    4 never executed
+        -:    9:
+    #####:   10:    oss << headPredicate.toString() << " :- ";
+    %%%%%:   10-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   10-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   10-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   10-block  3
+call    9 never executed
+    $$$$$:   10-block  4
+call   10 never executed
+    $$$$$:   10-block  5
+        -:   11:
+    #####:   12:    for (unsigned int i = 0; i < predicateList.size() - 1; i++) {
+    %%%%%:   12-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   13:        oss << predicateList.at(i).toString() << ",";
+    %%%%%:   13-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   13-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   13-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   13-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   13-block  4
+call   12 never executed
+    $$$$$:   13-block  5
+call   13 never executed
+    $$$$$:   13-block  6
+        -:   14:    }
+        -:   15:
+    #####:   16:    oss << predicateList.at(predicateList.size() - 1).toString() << ".";
+    %%%%%:   16-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   16-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   16-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   16-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   16-block  4
+call   13 never executed
+    $$$$$:   16-block  5
+call   14 never executed
+    $$$$$:   16-block  6
+        -:   17:
+    #####:   18:    return oss.str();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   18-block  0
+        -:   19:}

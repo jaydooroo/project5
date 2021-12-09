@@ -1,0 +1,55 @@
+        -:    0:Source:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/Rule.h
+        -:    0:Graph:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Parser.cpp.gcno
+        -:    0:Data:/users/guest/e/ejh612/tmp/tmp.60y5MWDIxy/cmake-build-debug-coverage/CMakeFiles/project4.dir/Parser.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ejh61 on 2021-09-25.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef PROJECT1_STARTER_CODE_RULE_H
+        -:    6:#define PROJECT1_STARTER_CODE_RULE_H
+        -:    7:#include "Predicate.h"
+        -:    8:#include <vector>
+        -:    9:#include <sstream>
+        -:   10:
+        -:   11:
+        -:   12:class Rule {
+        -:   13:private:
+        -:   14:    Predicate headPredicate;
+        -:   15:    std::vector <Predicate> predicateList;
+        -:   16:
+        -:   17:
+        -:   18:public:
+        -:   19:
+function _ZN4RuleC2E9Predicate called 0 returned 0% blocks executed 0%
+    #####:   20:    Rule(Predicate tempHead): headPredicate(tempHead) { }
+    %%%%%:   20-block  0
+call    0 never executed
+call    1 never executed
+        -:   21:
+function _ZN4RuleD2Ev called 0 returned 0% blocks executed 0%
+    #####:   22:    ~Rule() {}
+    %%%%%:   22-block  0
+call    0 never executed
+call    1 never executed
+        -:   23:
+function _ZN4Rule16setPredicateListE9Predicate called 0 returned 0% blocks executed 0%
+    #####:   24:    void setPredicateList (Predicate tempPredicate) {
+    #####:   25:        predicateList.push_back(tempPredicate);
+    %%%%%:   25-block  0
+call    0 never executed
+    #####:   26:    }
+        -:   27:
+        -:   28:    Predicate getPredicate () {
+        -:   29:        return headPredicate;
+        -:   30:    }
+        -:   31:    std::vector<Predicate> &getPredicateList () {
+        -:   32:        return predicateList;
+        -:   33:    }
+        -:   34:
+        -:   35:    std::string toString ();
+        -:   36:
+        -:   37:};
+        -:   38:
+        -:   39:
+        -:   40:#endif //PROJECT1_STARTER_CODE_RULE_H
