@@ -258,7 +258,9 @@ std::vector<std::set<int>> Interpreter::DFSF_trees(Graph &graph, std::vector<int
             SCC.insert(postOrder.at(i));
             DFS_trees(graph,isVisited,postOrder.at(i),SCC);
         }
-        SCCs.push_back(SCC);
+        if(SCC.size()>0) {
+            SCCs.push_back(SCC);
+        }
     }
     return SCCs;
 }
