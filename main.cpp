@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
 
     Interpreter inter(parser.getDatalog());
     cout << inter.EvaluateSCCRules();
-    cout << "Query Evaluation" << endl;
+    cout << endl << "Query Evaluation" << endl;
     cout << inter.initiateQueries();
 
     // TODO
