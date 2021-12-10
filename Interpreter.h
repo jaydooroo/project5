@@ -8,7 +8,7 @@
 #include "Database.h"
 #include "Graph.h"
 #include <iostream>
-
+#include <algorithm>
 class Interpreter {
 private:
     DatalogProgram datalog;
