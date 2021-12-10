@@ -243,7 +243,7 @@ std::vector<int> Interpreter::DFSF_postOrder (Graph &graph) {
 }
 
 void Interpreter::reversePostOrder (std::vector<int> &postOrder) {
-    std::reverse(postOrder.begin(), postOrder.end());
+    reverse(postOrder.begin(), postOrder.end());
 }
 
 std::vector<std::set<int>> Interpreter::DFSF_trees(Graph &graph, std::vector<int> &postOrder) {

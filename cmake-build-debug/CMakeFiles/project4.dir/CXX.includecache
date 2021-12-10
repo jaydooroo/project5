@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/ejh61/CLionProjects/project4/Automaton.h
-Token.h
-C:/Users/ejh61/CLionProjects/project4/Token.h
-
 C:/Users/ejh61/CLionProjects/project4/Database.h
 Relation.h
 C:/Users/ejh61/CLionProjects/project4/Relation.h
@@ -29,10 +25,6 @@ set
 -
 map
 -
-
-C:/Users/ejh61/CLionProjects/project4/Graph.cpp
-Graph.h
-C:/Users/ejh61/CLionProjects/project4/Graph.h
 
 C:/Users/ejh61/CLionProjects/project4/Graph.h
 map
@@ -64,31 +56,11 @@ C:/Users/ejh61/CLionProjects/project4/Graph.h
 iostream
 -
 
-C:/Users/ejh61/CLionProjects/project4/Lexer.h
-vector
--
-Automaton.h
-C:/Users/ejh61/CLionProjects/project4/Automaton.h
-Token.h
-C:/Users/ejh61/CLionProjects/project4/Token.h
-sstream
--
-
 C:/Users/ejh61/CLionProjects/project4/Parameter.h
 string
 -
 sstream
 -
-
-C:/Users/ejh61/CLionProjects/project4/Parser.h
-Token.h
-C:/Users/ejh61/CLionProjects/project4/Token.h
-vector
--
-sstream
--
-DatalogProgram.h
-C:/Users/ejh61/CLionProjects/project4/DatalogProgram.h
 
 C:/Users/ejh61/CLionProjects/project4/Predicate.h
 vector
@@ -120,10 +92,6 @@ vector
 sstream
 -
 
-C:/Users/ejh61/CLionProjects/project4/Token.h
-string
--
-
 C:/Users/ejh61/CLionProjects/project4/Tuple.h
 vector
 -
@@ -131,18 +99,4 @@ string
 -
 sstream
 -
-
-C:/Users/ejh61/CLionProjects/project4/main.cpp
-Lexer.h
-C:/Users/ejh61/CLionProjects/project4/Lexer.h
-fstream
--
-iostream
--
-vector
--
-Parser.h
-C:/Users/ejh61/CLionProjects/project4/Parser.h
-Interpreter.h
-C:/Users/ejh61/CLionProjects/project4/Interpreter.h
 
